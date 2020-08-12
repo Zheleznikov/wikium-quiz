@@ -1,0 +1,19 @@
+@mixin text-describe {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 128.9%;
+  letter-spacing: 0.005em;
+  color: #232323;
+}
+
+@mixin quest-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 128.9%;
+  letter-spacing: 0.015em;
+  color: #232323;
+}
