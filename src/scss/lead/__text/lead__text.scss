@@ -1,0 +1,4 @@
+.lead__text {
+  @include text-describe;
+  max-width: 808px;
+}

@@ -1,5 +1,15 @@
+@import '../node_modules/normalize.css/normalize';
+@import './scss/fonts.scss';
+@import './scss/mixins.scss';
+@import './scss/variables.scss';
 
+@import './scss/header/header.scss';
+@import './scss/lead/lead.scss';
+@import './scss/button/button.scss';
 
+body {
+  background-color: $main-bg;
+}
 .page {
   width: 100%;
   overflow: hidden;
