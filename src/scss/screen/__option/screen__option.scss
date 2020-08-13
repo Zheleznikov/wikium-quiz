@@ -19,14 +19,13 @@
   outline: none;
   cursor: pointer;
 
-
   color: #232323;
   position: relative;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .screen__option:active {
-  transform: scale(.98);
+  transform: scale(0.98);
 }
 
 .screen__option_icon {
@@ -40,6 +39,15 @@
   display: block;
 }
 
+.screen__option_short {
+  width: 44px;
+  height: 46px;
+  border-radius: 15px;
+  text-align: center;
+  margin-right: 12px;
+  font-size: 14px;
+  padding-left: 6px;
+}
 
 .option_correct {
   border: 1px solid $correct-color;
@@ -50,4 +58,3 @@
   border: 1px solid $wrong-color;
   border-right: 8px solid $wrong-color;
 }
-

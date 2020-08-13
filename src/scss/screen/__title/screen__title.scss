@@ -3,3 +3,14 @@
   margin-left: -8px;
   max-width: 700px;
 }
+
+.screen__title_2 {
+  max-width: 854px;
+}
+
+.screen__title_span {
+  @include quest-title;
+  font-size: 20px;
+  color: #A819FB;
+
+}
