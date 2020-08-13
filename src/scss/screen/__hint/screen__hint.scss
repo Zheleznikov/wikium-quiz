@@ -26,7 +26,10 @@
 
 
 .screen__hint_wrong {
-  color: #F99157;
+  color: $wrong-color;
 }
 
+.screen__hint_correct {
+  color: $correct-color;
+}
 
