@@ -1,0 +1,15 @@
+@import './__comment/screen__comment.scss';
+@import './__content/screen__content.scss';
+@import './__hint/screen__hint.scss';
+@import './__main/screen__main.scss';
+@import './__number/screen__number.scss';
+@import './__option/screen__option.scss';
+@import './__title/screen__title.scss';
+@import './__bg/screen__bg.scss';
+@import './__button/screen__button.scss';
+@import './__icon/screen__icon.scss';
+.screen {
+  // height: 500px;
+  border-top: 1px solid $main-bg;
+
+}

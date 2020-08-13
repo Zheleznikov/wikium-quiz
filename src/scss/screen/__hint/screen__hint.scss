@@ -1,0 +1,32 @@
+.screen__hint {
+  display: none;
+  max-width: 720px;
+  display: flex;
+  display: none;
+  padding-top: 14px;
+  padding-bottom: 28px;
+}
+
+.screen__hint_on {
+  display: flex;
+}
+
+.screen__hint_text {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  // line-height: 128.9%;
+  letter-spacing: 0.005em;
+  color: #232323;
+}
+
+
+
+.screen__hint_wrong {
+  color: #F99157;
+}
+
+

@@ -1,0 +1,12 @@
+.screen__content {
+  width: 1440px;
+  margin: 0 auto;
+  z-index: 1;
+  margin-top: -140px;
+}
+
+@media screen and (max-width:1440px) {
+  .screen__content {
+    width: 100%;
+  }
+}

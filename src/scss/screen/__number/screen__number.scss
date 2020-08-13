@@ -1,0 +1,23 @@
+.screen__number {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 128.9%;
+
+  letter-spacing: 0.005em;
+
+  color: #ffffff;
+  width: 42px;
+  height: 31px;
+
+
+  background: linear-gradient(90deg, #8f6aff 0%, #aa12fb 100%);
+  border-radius: 12px;
+  top: 28px;
+  right: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
