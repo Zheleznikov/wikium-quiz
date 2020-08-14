@@ -8,6 +8,7 @@ import Quiz from './js/Quiz';
 import Hurray from './js/Hurray';
 import Res from './js/Res';
 import Form from './js/Form';
+import Popup from './js/Popup';
 
 new SmoothScroll('a[href*="#"]', {
   speed: 800,
@@ -63,6 +64,10 @@ document.addEventListener("renderScreen", function(e) {
       new Res(main, results[2]);
     }
 
+    new Popup(document.querySelector('.popup'))
+
+    
+
   } else if (currentScreen === 'again') {
       main.innerHTML = '';
       new Quiz(main, quizData[0], screens[0], removeHash);
@@ -75,8 +80,8 @@ document.addEventListener("renderScreen", function(e) {
 // const form = document.querySelector('.form');
 // new Form(form);
 
-
-// new Res(main, results[0]);
+//  new Res(main, results[0]);
+// new Popup(document.querySelector('.popup'))
 
 function removeHash() {
   setTimeout(() => {
@@ -85,3 +90,5 @@ function removeHash() {
 }
 
 startTestButton.addEventListener('click', removeHash);
+
+
