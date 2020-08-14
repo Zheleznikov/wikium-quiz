@@ -2,17 +2,11 @@ import SmoothScroll from 'smooth-scroll';
 import screens from './js/screensArr';
 import results from './js/resArr';
 
-// new SmoothScroll('a[href*="#"]', {
-//   speed: 1200,
-//   easing: 'Linear'
-//     // easing: 'easeInCubic'
-// });
-
-function removeHash() {
-  setTimeout(() => {
-    history.pushState('', document.title, window.location.pathname);
-  }, 1)
-}
+new SmoothScroll('a[href*="#"]', {
+  speed: 1200,
+  easing: 'Linear'
+    // easing: 'easeInCubic'
+});
 
 
 import quizData from './js/quizData';
@@ -24,22 +18,18 @@ import Form from './js/Form';
 const main = document.querySelector('.main');
 const startTestButton = document.querySelector('.lead__button');
 
-startTestButton.addEventListener('click', removeHash);
-
-// new Res(main, results[1]);
 
 sessionStorage.setItem('number', 0);
 sessionStorage.setItem('answer', 0);
 
 
-// new Hurray(main);
-// const form = document.querySelector('.form');
-
-// new Form(form);
-
 document.addEventListener("renderScreen", function(e) {
+  removeHash();
   const currentScreen = e.detail.screenId;
   console.log('currentScreen', currentScreen);
+  const result = +sessionStorage.getItem('answer');
+
+  console.log('баллы в индексе - ', result)
 
   if (currentScreen < 10) {
     new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
@@ -49,8 +39,8 @@ document.addEventListener("renderScreen", function(e) {
     new Form(form);
   } else if (currentScreen === 'result') {
 
-    const result = sessionStorage.getItem('answer');
-    
+    console.log('финальный рез - ', result)
+
     if (result > 17) {
       new Res(main, results[0]);
     } else if (result < 18 && result > 9) {
@@ -58,18 +48,24 @@ document.addEventListener("renderScreen", function(e) {
     } else {
       new Res(main, results[2]);
     }
-    
 
 
+  } else if (currentScreen === 'again') {
+    main.innerHTML = '';
+    new Quiz(main, quizData[0], screens[0], removeHash);
   }
 
-
 });
-
 
 
 startTestButton.addEventListener('click', () => {
   new Quiz(main, quizData[0], screens[0], removeHash);
 })
 
-// new Quiz(main, quizData[9], screens[9], removeHash);
+function removeHash() {
+  setTimeout(() => {
+    history.pushState('', document.title, window.location.pathname);
+  }, 1)
+}
+
+startTestButton.addEventListener('click', removeHash);

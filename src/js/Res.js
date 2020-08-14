@@ -4,6 +4,7 @@ export default class Res {
     this.html = html;
     this.render();
     this.button = this.res.querySelector('.res__button');
+    this.handleAgain();
     
   }
 

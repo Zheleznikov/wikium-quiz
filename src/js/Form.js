@@ -14,10 +14,13 @@ export default class Form {
     //   console.log('clicked');
     // })
 
-    this.form.addEventListener('submit', (event) => {
-      event.preventDefault();
+    this.form.addEventListener('submit', (e) => {
+      e.preventDefault();
       this.sendUserData(this.name.value, this.surname.value, this.email.value, this.phone.value)
-      .then(res => console.log(res.data))
+      .then(res => {
+        console.log(res.data);
+        window.location.hash = '#12';
+      })
 
     })
   }

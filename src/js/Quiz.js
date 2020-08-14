@@ -53,7 +53,6 @@ export default class Quiz {
 
   handleNext() {
     this.nextButton.addEventListener("click", () => {
-      console.log(sessionStorage.getItem('answer'));
       this.nextButton.style.display = 'none';
       const next = this.data.number;
       const event = new CustomEvent("renderScreen", {
@@ -179,67 +178,7 @@ export default class Quiz {
     this.main.appendChild(this.screen);
   }
 
-  render2() {
-    this.screen = document.createElement("div");
-    this.screen.innerHTML = `
-    <section class="screen">
-    <div class="screen__bg"></div>
-    <div class="screen__content">
-    <p class="screen__pre">
-    ${this.data.pre}
-  </p>
-      <div class="screen__main">
-        <div class="screen__number">${this.data.number}</div>
-        <h2 class="screen__title screen__title_2">${this.data.title}</h2>
-        <p class="screen__title_span">${this.data.quest}</p>
-        <div class="screen__buttons">
-          <button class="screen__option screen__option_short option-1">
-          ${this.data.options[0].title}
-          <img class="screen__option_icon screen__option_icon_small">
-          </button>
-          <button class="screen__option screen__option_short option-2">
-          <img class="screen__option_icon screen__option_icon_small">
-          ${this.data.options[1].title}
-          </button>
-          <button class="screen__option screen__option_short option-3">${this.data.options[2].title}
-          <img class="screen__option_icon screen__option_icon_small">
-          </button>
-  
-          <button class="screen__option screen__option_short option-4">${this.data.options[3].title}
-          <img class="screen__option_icon screen__option_icon_small">
-          </button>
-        </div>
 
-        <div class="screen__hint hint-1">
-          <img src="" alt="" class="screen__icon">
-          <p class="screen__hint_text"><span class="screen__hint_right"></span>${this.data.options[0].hint}</p>
-        </div>
-        <div class="screen__hint hint-2">
-          <img src="" alt="" class="screen__icon">
-          <p><span class="screen__hint_right"></span>${this.data.options[1].hint}</p>
-        </div>
-        <div class="screen__hint hint-3">
-          <img src="" alt="" class="screen__icon">
-          <p class="screen__hint_text"><span class="screen__hint_wrong"></span>${this.data.options[2].hint}</p>
-        </div>
-        <div class="screen__hint hint-4">
-          <img src="" alt="" class="screen__icon">
-          <p class="screen__hint_text"><span class="screen__hint_right"></span>${this.data.options[3].hint}</p>
-        </div>
-  
-      </div>
-      <div class="comment">
-      </div>
-  
-  
-  
-    </div>
-    <button class="button screen__button next-button">Продолжить</button>
-  </section>
-    
-    `;
-    this.main.appendChild(this.screen);
-  }
 
 
 }

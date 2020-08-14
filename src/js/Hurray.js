@@ -10,7 +10,7 @@ export default class Hurray {
   handleNext() {
     this.button.addEventListener("click", () => {
       // console.log(sessionStorage.getItem('answer'));
-      // this.button.style.display = 'none';
+      this.button.style.display = 'none';
       const event = new CustomEvent("renderScreen", {
         detail: {
           screenId: 'result',
@@ -36,11 +36,9 @@ export default class Hurray {
           <input type="email" class="form__input email" placeholder="Email" >
           <input type="text" class="form__input phone" placeholder="Номер телефона" >
         </div>
-        <a href="#12">
-        <button type="submit" class="button form__button">Получить результаты</button>
-
-        </a>
+        <a href="#12"><button type="" class="button form__button">Получить результаты</button>
       </form>
+
     </div>
   </section>    
     `
