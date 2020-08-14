@@ -1,4 +1,21 @@
 .comment {
   width: 800px;
   margin: 0 auto;
+  display: none;
+
+  ul {
+    padding-top: 20px;
+  }
+}
+
+.comment_2 {
+  width: 900px;
+}
+
+.comment_5 {
+  width: 950px;
+}
+
+.comment_on {
+  display: block;
 }
