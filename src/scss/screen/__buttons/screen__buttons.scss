@@ -1,6 +1,10 @@
 .screen__buttons {
   display: flex;
   flex-wrap: wrap;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .screen__buttons_6 {

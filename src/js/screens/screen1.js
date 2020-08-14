@@ -8,11 +8,13 @@ export default `
       <div class="screen__number">1</div>
       <h2 class="screen__title">Ситуация: у вас первый день на новой работе, и вы остались наедине с коллегой. Что будете делать? </h2>
 
-      <div class="screen__buttons">
+      <div id="ans1" class="screen__buttons">
 
-        <button data-value="2" class="screen__option option-1">Уточню что-то по общим вопросам, а потом постараюсь найти тему для разговора 
-          <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-1">
-          </button>
+      <a class="screen__link" href="#ans1">
+      <button data-value="2" class="screen__option option-1">Уточню что-то по общим вопросам, а потом постараюсь найти тему для разговора 
+      <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-1">
+      </button>
+      </a>
 
         <div class="screen__hint hint-1">
           <img src="./images/hint-correct.jpg" alt="" class="screen__icon">
@@ -21,9 +23,11 @@ export default `
           </p>
         </div>
 
+        <a class="screen__link" href="#ans1">
         <button data-value="1" class="screen__option option-2">Расскажу несколько веселых анекдотов и случаев из жизни
           <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-2">
           </button>
+          </a>
 
         <div class="screen__hint hint-2">
           <img src="./images/hint-correct.jpg" alt="" class="screen__icon">
@@ -32,10 +36,12 @@ export default `
           </p>
         </div>
 
+        <a class="screen__link" href="#ans1">
         <button data-value="0" class="screen__option option-3">
           Мне станет некомфортно, и я придумаю предлог, чтобы уйти
             <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-3">
           </button>
+          </a>
 
         <div class="screen__hint hint-3">
           <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
@@ -45,9 +51,11 @@ export default `
         </div>
 
 
+        <a  class="screen__link"href="#ans1">
         <button data-value="0" class="screen__option option-4">Подожду, пока коллега заговорит первым
             <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-4">
           </button>
+        </a>
 
         <div class="screen__hint hint-4">
           <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">

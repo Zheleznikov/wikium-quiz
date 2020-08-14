@@ -19,6 +19,10 @@
   max-width: 420px;
 }
 
+.screen__hint_7 {
+  flex-wrap: wrap;
+}
+
 .screen__hint_text {
   margin: 0;
   padding: 0;
@@ -29,6 +33,10 @@
   line-height: 130%;
   letter-spacing: 0.005em;
   color: #232323;
+}
+
+.screen__hint_text_7 {
+  max-width: 600px;
 }
 
 

@@ -18,3 +18,13 @@
   color: #A819FB;
 
 }
+
+.screen__title_span_7 {
+  @include quest-title;
+  color: #A819FB;
+}
+
+.screen__title_7 {
+  margin-bottom: 28px;
+
+}

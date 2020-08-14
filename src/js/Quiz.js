@@ -30,6 +30,7 @@ export default class Quiz {
     this.nextButton = this.screen.querySelector(".next-button");
     this.comment = this.screen.querySelector(".comment");
 
+
     this.options = this.screen.querySelectorAll(".screen__option");
     this.renderHandle();
     this.handle1();

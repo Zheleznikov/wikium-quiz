@@ -9,12 +9,15 @@ export default `
       <div class="screen__number">3</div>
       <h2 class="screen__title">Коллега ушел в отпуск, и у вас стало еще больше работы: приезжаете рано и задерживаетесь допоздна. Ваш начальник кладет на стол очередную стопку документов для нового проекта. Как вы поступите?  </h2>
 
-      <div class="screen__buttons">
+      <div id="ans3" class="screen__buttons">
+
+      <a class="screen__link" href="#ans3">
 
         <button data-value="0" class="screen__option option-1">
           Налью кружку кофе, отложу все домашние дела и приступлю к работе (показываем подсказку
           <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-1">
           </button>
+          </a>
 
         <div class="screen__hint hint-1">
           <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
@@ -26,10 +29,13 @@ export default `
           </p>
         </div>
 
+        <a class="screen__link" href="#ans3">
+
         <button data-value="1" class="screen__option option-2">
           Честно скажу начальнику, что не справляюсь
           <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-2">
           </button>
+          </a>
 
         <div class="screen__hint hint-2">
           <img src="./images/hint-correct.jpg" alt="" class="screen__icon">
@@ -40,10 +46,15 @@ export default `
           </p>
         </div>
 
-        <button data-value="0" class="screen__option option-3">
-          Положу документы на стол к коллеге. Вернется из отпуска — сделает            
-          <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-3">
+
+        <a class="screen__link" href="#ans3">
+
+          <button data-value="0" class="screen__option option-3">
+            Положу документы на стол к коллеге. Вернется из отпуска — сделает            
+            <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-3">
           </button>
+
+          </a>
 
         <div class="screen__hint hint-3">
           <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
@@ -52,10 +63,11 @@ export default `
           </p>
         </div>
 
-
-        <button data-value="2" class="screen__option option-4">Составлю примерный план действий, обозначу таймлайн. Затем поделюсь с начальником и коллегами
-            <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-4">
-          </button>
+        <a class="screen__link" href="#ans3">
+          <button data-value="2" class="screen__option option-4">Составлю примерный план действий, обозначу таймлайн. Затем поделюсь с начальником и коллегами
+              <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-4">
+            </button>
+        </a>
 
         <div class="screen__hint hint-4">
           <img src="./images/hint-correct.jpg" alt="" class="screen__icon">

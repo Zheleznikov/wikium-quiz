@@ -9,12 +9,14 @@ export default `
       <div class="screen__number">4</div>
       <h2 class="screen__title screen__title_4">Вы очень много работаете над проектом вместе с сотрудником из другого отдела. Проблема в том, что ваш напарник безответственный и перекладывает всю вину на вас. Начальник недоволен и грозится вас уволить. Придется принять какое-то решение.</h2>
 
-      <div class="screen__buttons">
+      <div id="ans4" class="screen__buttons">
 
+      <a class="screen__link" href="#ans4">
         <button data-value="2" class="screen__option option-1">
           Встречусь с коллегой в неформальной обстановке, попробую поговорить по душам и решить проблему
            <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-1">
           </button>
+          </a>
 
         <div class="screen__hint hint-1">
           <img src="./images/hint-correct.jpg" alt="" class="screen__icon">
@@ -25,10 +27,13 @@ export default `
           </p>
         </div>
 
+        <a class="screen__link" href="#ans4">
+
         <button data-value="0" class="screen__option option-2">
           Пока никого нет, зайду к начальнику и расскажу всю правду. Пусть пересмотрит свою позицию
           <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-2">
           </button>
+          </a>
 
         <div class="screen__hint hint-2">
           <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
@@ -38,10 +43,14 @@ export default `
           </p>
         </div>
 
+        <a class="screen__link" href="#ans4">
+
         <button data-value="0" class="screen__option option-3">
           Попрошу начальника поменять партнера по проекту 
            <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-3">
           </button>
+
+          </a>
 
         <div class="screen__hint hint-3">
           <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
@@ -51,10 +60,12 @@ export default `
           </p>
         </div>
 
+        <a class="screen__link" href="#ans4">
 
         <button data-value="0" class="screen__option option-4">Скажу коллеге, что его помощь не требуется. Справлюсь с проектом самостоятельно
             <img src="./images/hint-wrong.jpg" alt="" class="screen__option_icon icon-4">
           </button>
+          </a>
 
         <div class="screen__hint hint-4">
           <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">

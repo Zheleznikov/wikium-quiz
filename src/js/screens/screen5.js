@@ -14,32 +14,41 @@ export default `
         Олагкартинаопрвнхолстопрдомгнанотаортвыкистьорткрхрустрмузыкаофжщзустихорснростна
       </p>
 
-      <div class="screen__buttons">
+      <div id="ans5" class="screen__buttons">
         <div class="screen__icon-container">
           <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">
-          <button data-value="0" class="screen__option screen__option_short option-1">
-            3
-           </button>
+          <a href="#ans5">
+            <button data-value="0" class="screen__option screen__option_short option-1">
+              3
+            </button>
+           </a>
         </div>
 
         <div class="screen__icon-container">
           <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-2">
+          <a href="#ans5">
           <button data-value="0" class="screen__option screen__option_short option-2">
             4
            </button>
+           </a>
         </div>
         <div class="screen__icon-container">
           <img src="./images/option-correct.jpg" class="screen__option_icon screen__option_icon_small icon-3">
+
+          <a href="#ans5">
           <button data-value="2" class="screen__option screen__option_short option-3">
             5
            </button>
+           </a>
         </div>
 
         <div class="screen__icon-container">
           <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-4 ">
+          <a href="#ans5">
           <button data-value="0" class="screen__option screen__option_short option-4">
             6
            </button>
+           </a>
         </div>
       </div>
 

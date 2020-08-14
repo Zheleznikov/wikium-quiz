@@ -1,3 +1,4 @@
+export default `
 <section class="screen">
   <div class="screen__bg"></div>
   <div class="screen__content">
@@ -6,7 +7,7 @@
     </p>
     <div class="screen__main">
       <div class="screen__number">7</div>
-      <h2 id="ans7" class="screen__title screen__title_2">Попытайтесь определить эту закономерность и понять, что должно скрываться под знаком вопроса?
+      <h2  class="screen__title screen__title_2">Попытайтесь определить эту закономерность и понять, что должно скрываться под знаком вопроса?
       </h2>
       <h2 class="screen__title screen__title_7">6, 7 = 2 &nbsp;&nbsp;&nbsp
         3, 9 = 7 
@@ -18,7 +19,7 @@
 
     
 
-      <div class="screen__buttons">
+      <div id="ans7" class="screen__buttons">
         <div class="screen__icon-container">
           <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans7">
@@ -30,12 +31,14 @@
 
            <div class="screen__icon-container">
             <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-2">
+
             <a href="#ans7">
 
             <button data-value="0" class="screen__option screen__option_short option-2">
               15
              </button>
              </a>
+             
           </div>
 
           <div class="screen__icon-container">
@@ -87,7 +90,7 @@
         </div>
   
   
-        <div class="screen__hint screen__hint_on  screen__hint_7 hint-2">
+        <div class="screen__hint screen__hint_7 hint-2">
           <img src="./images/hint-wrong.jpg" alt="" class="screen__icon screen__icon_7">
           <p class="screen__hint_text screen__hint_text_7"><span class="screen__hint_wrong">
         Неверно. 
@@ -210,3 +213,9 @@
 
 </section>
 
+
+
+
+
+
+`
