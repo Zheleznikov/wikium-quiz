@@ -19,3 +19,10 @@
 .comment_on {
   display: block;
 }
+
+@media screen and (max-width: 799px) {
+  .comment {
+    width: 95%;
+
+  }
+}

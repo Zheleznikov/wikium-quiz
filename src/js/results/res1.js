@@ -26,9 +26,9 @@ export default `
         <p class="footer__year">2020</p>
       </div>
       <div>
-        <a href="">
+        <button class="footer__modal">
           <img src="./images/footer-pres.png" alt="" class="footer__image">
-        </a>
+        </button>
 
       </div>
     </footer>

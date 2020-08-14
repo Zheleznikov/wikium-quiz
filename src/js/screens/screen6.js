@@ -15,7 +15,7 @@ export default `
 
 <!-- buttons -->
       <div id="ans6" class="screen__buttons screen__buttons_6">
-        <div style="display: flex; flex-wrap:wrap;">
+        <div style="display: flex; flex-wrap:wrap; max-width:240px">
           <div class="screen__icon-container">
             <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">
             <a href="#ans6">

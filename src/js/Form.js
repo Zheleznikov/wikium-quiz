@@ -10,16 +10,25 @@ export default class Form {
   }
 
   handle() {
-    // this.button.addEventListener('click', () => {
-    //   console.log('clicked');
-    // })
 
     this.form.addEventListener('submit', (e) => {
       e.preventDefault();
       this.sendUserData(this.name.value, this.surname.value, this.email.value, this.phone.value)
       .then(res => {
+        this.button.style.display = 'none';
+        
+
         console.log(res.data);
-        window.location.hash = '#12';
+
+        // const event = new CustomEvent("renderScreen", {
+        //   detail: {
+        //     screenId: 'result',
+        //   },
+        // });
+        // document.dispatchEvent(event);
+        // window.location.hash = "#12";
+
+        
       })
 
     })

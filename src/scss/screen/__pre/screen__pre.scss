@@ -20,3 +20,9 @@
 .screen__pre_7 {
   margin: -350px auto 20px;
 }
+
+@media screen and (max-width: 680px) {
+  .screen__pre {
+    width: 95%;
+  }
+}

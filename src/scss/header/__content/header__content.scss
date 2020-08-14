@@ -7,8 +7,14 @@
   display: flex;
   justify-content: center;
   padding-top: 75px;
-  background: url(./images/header-bg.jpg);
+  background: url(./images/header-1.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   
+}
+
+@media screen and (max-width: 1439px) {
+  .header__content {
+    width: 100%;
+  }
 }

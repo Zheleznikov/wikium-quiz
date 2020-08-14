@@ -1,4 +1,11 @@
 .lead__content {
   width: 1026px;
   margin: 0 auto;
+  
+}
+
+@media screen and (max-width: 1026px) {
+  .lead__content {
+    width: 95%;
+  }
 }
