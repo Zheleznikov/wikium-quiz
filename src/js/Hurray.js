@@ -29,11 +29,11 @@ export default class Hurray {
       <img src="./images/hurray-palms.png" alt="" class="hurray__image">
       <h2 class="hurray__title">Ура! Тест пройден</h2>
       <p class="hurray__subtitle">Заполните форму и получите результаты</p>
-      <form class="form hurray__form">
+      <form action="http://httpbin.org/post" class="form hurray__form" method="post">
         <div class="form__content">
-          <input type="text" class="form__input name" placeholder="Имя" required maxlength="16" minlength="2">
-          <input type="text" class="form__input surname" placeholder="Фамилия"  maxlength="16" minlength="2">
-          <input type="email" class="form__input email" placeholder="Email"   minlength="8">
+          <input type="text" name="formParams[full_name]" class="form__input name" placeholder="Имя" required maxlength="16" minlength="2">
+          <input type="text" class="form__input surname" name="formParams[full_name2]" placeholder="Фамилия"  maxlength="16" minlength="2">
+          <input type="email" name="formParams[email]" class="form__input email" placeholder="Email"   minlength="8">
           <input type="tel" class="form__input phone" placeholder="Номер телефона"  minlength="10"  maxlength="11" >
         </div>
         <button type="" class="button form__button"Получить результаты</button>

@@ -76,7 +76,7 @@ document.addEventListener("renderScreen", function(e) {
 });
 
 
-// new Hurray(main);
+ // new Hurray(main);
 // const form = document.querySelector('.form');
 // new Form(form);
 
