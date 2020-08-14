@@ -25,7 +25,7 @@ startTestButton.addEventListener('click', () => {
   new Quiz(main, quizData[0], screens[0]);
   })
 
-  // new Quiz(main, quizData[4], screens[4]);
+  // new Quiz(main, quizData[5], screens[5]);
 
 
 

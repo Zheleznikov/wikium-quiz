@@ -52,6 +52,7 @@ export default class Quiz {
   handleNext() {
     this.nextButton.addEventListener("click", () => {
       console.log(sessionStorage.getItem('answer'));
+      this.nextButton.style.display = 'none';
       const next = this.data.number;
       const event = new CustomEvent("renderScreen", {
         detail: {

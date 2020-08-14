@@ -1,5 +1,5 @@
 export default `
-<section class="screen">
+<section class="screen screen_5">
   <div class="screen__bg"></div>
   <div class="screen__content">
     <p class="screen__pre">
@@ -53,7 +53,7 @@ export default `
 
       <div class="screen__hint screen__hint_5 hint-2">
         <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
-        <p><span class="screen__hint_right">
+        <p class="screen__hint_text"><span class="screen__hint_right">
           Неверно.
         </span> Кажется, вы не угадали. Правильный ответ — 5 слов. Картина, холст, кисть, музыка, стих.
         </p>
