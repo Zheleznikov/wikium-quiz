@@ -3,6 +3,7 @@ import screens from './js/screensArr';
 
 new SmoothScroll('a[href*="#"]', {
   speed: 1200,
+  easing: 'Linear'
   // easing: 'easeInCubic'
 });
 
@@ -26,7 +27,14 @@ sessionStorage.setItem('answer', 0);
 
 
 document.addEventListener("renderScreen", function(e) {
-  new Quiz(main, quizData[e.detail.screenId], screens[e.detail.screenId], removeHash);
+const currentScreen = e.detail.screenId;
+console.log(currentScreen);
+  if (currentScreen === 10) {
+    console.log('huh')
+  } else {
+    new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
+
+  }
 
 });
 
@@ -34,7 +42,7 @@ startTestButton.addEventListener('click', () => {
   new Quiz(main, quizData[0], screens[0],removeHash);
   })
 
-  // new Quiz(main, quizData[7], screens[7]);
+  // new Quiz(main, quizData[9], screens[9], removeHash);
 
 
 

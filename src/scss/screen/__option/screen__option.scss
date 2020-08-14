@@ -20,6 +20,8 @@
   color: #232323;
   position: relative;
   transition: all 0.5s;
+  font-size: 18px;
+
 }
 
 .screen__option:active {
@@ -49,6 +51,13 @@
   width: 71px;
   height: 71px;
   border-radius: 15px;
+  text-align: center;
+  margin-right: 24px;
+  font-size: 18px;
+  padding-left: 4px;
+}
+
+.screen__option_custom {
   text-align: center;
   margin-right: 24px;
   font-size: 18px;

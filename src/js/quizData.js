@@ -69,8 +69,17 @@ export default [
   },
   {
     number: 9,
-    bg: 'url(./images/screen-8-bg.jpg) #BEDCDA center',
-    margin: '-120px',
+    bg: 'url(./images/screen-9-bg.jpg) #E8A83E center',
+    margin: '-320px',
+
+    probarclass: '',
+   
+  },
+
+  {
+    number: 10,
+    bg: 'url(./images/screen-10-bg.jpg) center',
+    margin: '-320px',
 
     probarclass: '',
    
