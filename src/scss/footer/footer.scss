@@ -1,0 +1,10 @@
+@import './__link/footer__link.scss';
+@import './__year/footer__year.scss';
+@import './__image/footer__image.scss';
+@import './__sign/footer__sign.scss';
+@import './__share/footer__share.scss';
+.footer {
+  display: flex;
+  margin-top: 180px;
+  justify-content: space-between;
+}

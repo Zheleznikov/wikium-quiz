@@ -6,3 +6,9 @@
 @import './__text/res__text.scss';
 @import './__link/res__link.scss';
 @import './__button/res__button.scss';
+
+.res {
+  a {
+    text-decoration: none;
+  }
+}

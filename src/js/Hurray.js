@@ -9,11 +9,11 @@ export default class Hurray {
 
   handleNext() {
     this.button.addEventListener("click", () => {
-      console.log(sessionStorage.getItem('answer'));
-      this.button.style.display = 'none';
+      // console.log(sessionStorage.getItem('answer'));
+      // this.button.style.display = 'none';
       const event = new CustomEvent("renderScreen", {
         detail: {
-          screenId: 11,
+          screenId: 'result',
         },
       });
       document.dispatchEvent(event);
@@ -29,14 +29,17 @@ export default class Hurray {
       <img src="./images/hurray-palms.png" alt="" class="hurray__image">
       <h2 class="hurray__title">Ура! Тест пройден</h2>
       <p class="hurray__subtitle">Заполните форму и получите результаты</p>
-      <form action="" class="form hurray__form">
+      <form class="form hurray__form">
         <div class="form__content">
-          <input type="text" class="form__input" placeholder="Имя" required>
-          <input type="text" class="form__input" placeholder="Фамилия" required>
-          <input type="email" class="form__input" placeholder="Email" required>
-          <input type="text" class="form__input" placeholder="Номер телефона" required>
+          <input type="text" class="form__input name" placeholder="Имя" >
+          <input type="text" class="form__input surname" placeholder="Фамилия" >
+          <input type="email" class="form__input email" placeholder="Email" >
+          <input type="text" class="form__input phone" placeholder="Номер телефона" >
         </div>
-        <button class="button form__button">Получить результаты</button>
+        <a href="#12">
+        <button type="submit" class="button form__button">Получить результаты</button>
+
+        </a>
       </form>
     </div>
   </section>    

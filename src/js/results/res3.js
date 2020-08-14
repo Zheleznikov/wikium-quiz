@@ -1,3 +1,5 @@
+export default `
+
 <section id="12" class="res">
   <div class="res__content">
     <div class="res__describe">
@@ -12,9 +14,9 @@
         </a>
         На вебинаре основатели Викиум, Сергей Белан и Артем Овечкин, поделятся советами о том, как сделать прорыв в карьере, ставить цели и быстро их достигать, перестать забывать детали и важные даты, наладить взаимоотношения с близкими.
       </p>
-      <a href="#1">
-        <button class="button res__button">Начать заново</button>
-      </a>
+
+
+      <button class="button res__button">Начать заново</button>
 
     </div>
 
@@ -26,7 +28,7 @@
       </div>
       <div>
         <a href="">
-          <img src="../images/footer-pres.png" alt="" class="footer__image">
+          <img src="./images/footer-pres.png" alt="" class="footer__image">
         </a>
 
       </div>
@@ -35,3 +37,5 @@
   </div>
 
 </section>
+
+`
