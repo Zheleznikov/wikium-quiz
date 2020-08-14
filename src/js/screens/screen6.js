@@ -123,7 +123,7 @@ export default `
 
 
 
-      <a href="#6">
+      <a href="#7">
         <button class="button screen__button next-button">Продолжить</button>
       </a>
 

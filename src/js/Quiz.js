@@ -1,8 +1,9 @@
 export default class Quiz {
-  constructor(main, data, screenHtml) {
+  constructor(main, data, screenHtml, removeHash) {
     this.main = main;
     this.data = data;
     this.screenHtml = screenHtml;
+    this.removeHash = removeHash;
 
     this.screen = null;
 
@@ -62,6 +63,7 @@ export default class Quiz {
       });
       document.dispatchEvent(event);
     });
+    this.removeHash();
   }
 
 
@@ -99,6 +101,7 @@ export default class Quiz {
     this.showCorrectOrNot();
     this.comment.classList.add('comment_on');
     this.options.forEach((option) => option.setAttribute("disabled", true));
+    this.removeHash();
   }
 
   // обработчики кнопок

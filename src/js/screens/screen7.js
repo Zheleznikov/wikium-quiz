@@ -38,7 +38,7 @@ export default `
               15
              </button>
              </a>
-             
+
           </div>
 
           <div class="screen__icon-container">
@@ -201,7 +201,7 @@ export default `
 
 
 
-      <a href="#6">
+      <a href="#8">
         <button class="button screen__button next-button">Продолжить</button>
       </a>
 

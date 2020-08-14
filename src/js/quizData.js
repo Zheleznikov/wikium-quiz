@@ -58,6 +58,22 @@ export default [
 
     probarclass: '',
    
+  },
+  {
+    number: 8,
+    bg: 'url(./images/screen-8-bg.jpg) #BEDCDA center',
+    margin: '-120px',
+
+    probarclass: '',
+   
+  },
+  {
+    number: 9,
+    bg: 'url(./images/screen-8-bg.jpg) #BEDCDA center',
+    margin: '-120px',
+
+    probarclass: '',
+   
   }
 
 ]

@@ -19,7 +19,7 @@
   max-width: 420px;
 }
 
-.screen__hint_7 {
+.screen__hint_7, .screen__hint_8 {
   flex-wrap: wrap;
 }
 
@@ -37,6 +37,10 @@
 
 .screen__hint_text_7 {
   max-width: 600px;
+}
+
+.screen__hint_text_8 {
+  margin-bottom: 8px;
 }
 
 
