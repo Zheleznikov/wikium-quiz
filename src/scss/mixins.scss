@@ -17,3 +17,28 @@
   letter-spacing: 0.015em;
   color: #232323;
 }
+
+@mixin res-subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 128.9%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin-bottom: 48px;
+  color: #232323;
+}
+
+@mixin res-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 40px;
+  /* identical to box height */
+
+  /* text collor (black) */
+
+  color: #232323;
+}

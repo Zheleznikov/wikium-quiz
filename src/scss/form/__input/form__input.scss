@@ -1,0 +1,28 @@
+.form__input {
+  width: 248px;
+  height: 42px;
+  display: block;
+  margin-bottom: 28px;
+  background-color: #f0e0f8;
+  border: none;
+  outline: none;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 128.9%;
+  /* identical to box height, or 18px */
+
+  letter-spacing: -0.05em;
+  color: #232323;
+
+  /* Вторичный текст */
+
+
+}
+
+.form__input::placeholder {
+  font-size: 14px;
+  color: #a59baa;
+}

@@ -1,11 +1,11 @@
 import SmoothScroll from 'smooth-scroll';
 import screens from './js/screensArr';
 
-new SmoothScroll('a[href*="#"]', {
-  speed: 1200,
-  easing: 'Linear'
-  // easing: 'easeInCubic'
-});
+// new SmoothScroll('a[href*="#"]', {
+//   speed: 1200,
+//   easing: 'Linear'
+//     // easing: 'easeInCubic'
+// });
 
 function removeHash() {
   setTimeout(() => {
@@ -13,36 +13,35 @@ function removeHash() {
   }, 1)
 }
 
-document.querySelectorAll('a').forEach(link => link.addEventListener('click', removeHash));
 
 import quizData from './js/quizData';
 import Quiz from './js/Quiz';
+import Hurray from './js/Hurray';
+
 const main = document.querySelector('.main');
 const startTestButton = document.querySelector('.lead__button');
+
+startTestButton.addEventListener('click', removeHash);
 
 
 sessionStorage.setItem('number', 0);
 sessionStorage.setItem('answer', 0);
 
 
-
-document.addEventListener("renderScreen", function(e) {
-const currentScreen = e.detail.screenId;
-console.log(currentScreen);
-  if (currentScreen === 10) {
-    console.log('huh')
-  } else {
-    new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
-
-  }
-
-});
-
-startTestButton.addEventListener('click', () => {
-  new Quiz(main, quizData[0], screens[0],removeHash);
-  })
-
-  // new Quiz(main, quizData[9], screens[9], removeHash);
+// new Hurray(main);
+// document.addEventListener("renderScreen", function(e) {
+//   const currentScreen = e.detail.screenId;
+//   if (currentScreen < 10) {
+//     new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
+//   } else if (currentScreen === 10) {
+//     new Hurray(main);
+//   } 
 
 
+// });
 
+// startTestButton.addEventListener('click', () => {
+//   new Quiz(main, quizData[0], screens[0], removeHash);
+// })
+
+// new Quiz(main, quizData[9], screens[9], removeHash);
