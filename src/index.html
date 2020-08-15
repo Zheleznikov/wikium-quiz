@@ -22,30 +22,18 @@
       <!-- @@include('htmlParts/screen.html') -->
       <!-- @@include('htmlParts/screenTest.html') -->
     </main>
+    <div class="wiki">
+      @@include('./htmlParts/wikiumform.html')
+    </div>
 
-    @@include('./htmlParts/wikiumform.html')
-
-
-
-    <footer class="footer">
-      <div class="footer__share"></div>
-      <div class="footer__sign">
-        <a href="" class="footer__link">Хайп/Викиум</a>
-        <p class="footer__year">2020</p>
-      </div>
-      <div>
-        <!-- <button class="footer__modal">
-          <img src="./images/footer-pres.png" alt="" class="footer__image">
-        </button> -->
-
-      </div>
-    </footer>
-
+    @@include('./htmlParts/footer.html')
 
     @@include('./htmlParts/popup.html')
   </div>
 
   <script src='./index.js'></script>
+  <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+  <script src="https://yastatic.net/share2/share.js"></script>
 
 </body>
 

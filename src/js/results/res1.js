@@ -19,19 +19,7 @@ export default `
   
     </div>
 
-    <footer class="footer">
-      <div class="footer__share"></div>
-      <div class="footer__sign">
-        <a href="" class="footer__link">Хайп/Викиум</a>
-        <p class="footer__year">2020</p>
-      </div>
-      <div>
-        <button class="footer__modal">
-          <img src="./images/footer-pres.png" alt="" class="footer__image">
-        </button>
 
-      </div>
-    </footer>
 
   </div>
 

@@ -15,9 +15,12 @@ const resultBlock = document.querySelector(".hurray");
 const probar = document.querySelector(".probar");
 const seeResultButton = document.querySelector(".form__button");
 const page = document.querySelector(".page");
+const wiki = document.querySelector('.wiki');
 
 sessionStorage.setItem("number", 0);
 sessionStorage.setItem("answer", 0);
+
+
 
 function getFirstScreen() {
   new Quiz(main, quizData[0], screens[0], removeHash);
@@ -26,6 +29,8 @@ function getFirstScreen() {
 }
 
 startTestButton.addEventListener("click", getFirstScreen);
+
+new Popup(document.querySelector('.popup'))
 
 document.addEventListener("renderScreen", (e) => {
   removeHash();
@@ -48,47 +53,25 @@ document.addEventListener("renderScreen", (e) => {
       new Quiz(main, quizData[0], screens[0], removeHash);
   }
 
-  // if (currentScreen < 10) {
-  //   new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
-  // }
-  // else if (currentScreen === 10) {
-  //   resultBlock.classList.add('hurray_on');
-  // }
-  // else if (currentScreen === 10) {
 
-  //   console.log('финальный рез - ', result)
-  //   if (result > 17) {
-  //     new Res(main, results[0]);
-  //   } else if (result < 18 && result > 9) {
-  //     new Res(main, results[1]);
-  //   } else {
-  //     new Res(main, results[2]);
-  //   }
-
-  //   new Popup(document.querySelector('.popup'))
-
-  // } else if (currentScreen === 'again') {
-  //     main.innerHTML = '';
-  //     new Quiz(main, quizData[0], screens[0], removeHash);
-  // }
 });
 
 seeResultButton.addEventListener("click", () => {
   const result = +sessionStorage.getItem("answer");
   switch (true) {
     case result > 17:
-      new Res(page, results[0]);
+      new Res(wiki, results[0]);
       break;
     case result < 18 && result > 9:
-      new Res(page, results[1]);
+      new Res(wiki, results[1]);
       break;
     case result < 10:
-      new Res(page, results[2]);
+      new Res(wiki, results[2]);
       break;
   }
 });
 
-// resultBlock.classList.add("hurray_on");
+
 
 function removeHash() {
   setTimeout(() => {
@@ -97,3 +80,10 @@ function removeHash() {
 }
 
 // document.querySelectorAll('a').forEach(link => link.addEventListener('click', removeHash));
+
+// TESTING 
+
+resultBlock.classList.add("hurray_on");
+// new Form(document.querySelector('.form'));
+
+// new Res(main, results[2]);
