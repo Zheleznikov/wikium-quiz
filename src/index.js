@@ -16,22 +16,20 @@ new SmoothScroll('a[href*="#"]', {
 });
 
 
-
-
 const main = document.querySelector('.main');
 const startTestButton = document.querySelector('.lead__button');
 const resultBlock = document.querySelector('.hurray');
+const probar = document.querySelector('.probar');
 
 
 sessionStorage.setItem('number', 0);
 sessionStorage.setItem('answer', 0);
 
 
-
 function getFirstScreen() {
   new Quiz(main, quizData[0], screens[0], removeHash);
   startTestButton.removeEventListener('click', getFirstScreen);
-
+  probar.classList.add('probar_on');
 }
 
 startTestButton.addEventListener('click', getFirstScreen);
@@ -49,21 +47,12 @@ document.addEventListener("renderScreen", function(e) {
   if (currentScreen < 10) {
     new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
   } 
- 
   else if (currentScreen === 10) {
-    resultBlock.classList.add('hurray_on')
-
-    // new Hurray(main);
-    // const form = document.querySelector('.form');
-    // new Form(form);
-    
+    resultBlock.classList.add('hurray_on');
   } 
-
   else if (currentScreen === 10) {
-    // window.location.hash = '#12';
 
     console.log('финальный рез - ', result)
-
     if (result > 17) {
       new Res(main, results[0]);
     } else if (result < 18 && result > 9) {
@@ -74,8 +63,6 @@ document.addEventListener("renderScreen", function(e) {
 
     new Popup(document.querySelector('.popup'))
 
-    
-
   } else if (currentScreen === 'again') {
       main.innerHTML = '';
       new Quiz(main, quizData[0], screens[0], removeHash);
@@ -84,12 +71,6 @@ document.addEventListener("renderScreen", function(e) {
 });
 
 
- // new Hurray(main);
-// const form = document.querySelector('.form');
-// new Form(form);
-
-//  new Res(main, results[0]);
-// new Popup(document.querySelector('.popup'))
 
 function removeHash() {
   setTimeout(() => {

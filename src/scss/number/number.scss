@@ -10,18 +10,38 @@
   margin-bottom: 12px;
   margin-top: 0;
   text-align: center;
-  // padding-left: 7px;
   padding-top: 3.5px;
   box-sizing: border-box;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  // line-height: 128.9%;
-  /* identical to box height, or 18px */
+  position: relative;
+
   letter-spacing: -0.05em;
 }
 
-.number__link {
-  text-decoration: none;
+.number__svg {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: calc(50% - 5px);
+  z-index: 1;
+  
 }
+
+.number_disabled {
+  background: linear-gradient(90deg, #D9D4E9 0%, #A090A9 100%);
+}
+
+.number_correct {
+  background: #24D556
+}
+
+.number_wrong {
+  background: #F99157;
+}
+
+.number_current {
+  background: linear-gradient(90deg, #8F6AFF 0%, #AA12FB 100%);
+}
+

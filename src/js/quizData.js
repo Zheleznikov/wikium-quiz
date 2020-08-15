@@ -3,7 +3,7 @@ export default [
     number: 1,
     margin: '-140px',
     bg: 'url(./images/screen-1-bg.jpg) #FEDDF0 center',
-    probarclass: '',
+    probarclass: '.number_1',
 
   },
 
@@ -12,7 +12,7 @@ export default [
     bg: 'url(./images/screen-2-bg.jpg) #FFCF54 center',
     margin: '-380px',
 
-    probarclass: '',
+    probarclass: '.number_2',
    
   },
 
@@ -21,7 +21,7 @@ export default [
     bg: 'url(./images/screen-3-bg.jpg) #A3BFC6 center',
     margin: '-140px',
 
-    probarclass: '',
+    probarclass: '.number_3',
    
   },
 
@@ -30,7 +30,7 @@ export default [
     bg: 'url(./images/screen-4-bg.jpg) #FFCA00 center',
     margin: '-380px',
 
-    probarclass: '',
+    probarclass: '.number_4',
 
 
   },
@@ -39,7 +39,7 @@ export default [
     number: 5,
     bg: 'url(./images/screen-5-bg.jpg) #FFCA00 center',
     margin: '-260px',
-    probarclass: '',
+    probarclass: '.number_5',
   },
 
   {
@@ -47,7 +47,7 @@ export default [
     bg: 'url(./images/screen-6-bg.jpg) #B6DAD6 center',
     margin: '-500px',
 
-    probarclass: '',
+    probarclass: '.number_6',
     
   },
 
@@ -56,7 +56,7 @@ export default [
     bg: 'url(./images/screen-7-bg.jpg) #C3E2DF center',
     margin: '-320px',
 
-    probarclass: '',
+    probarclass: '.number_7',
    
   },
   {
@@ -64,7 +64,7 @@ export default [
     bg: 'url(./images/screen-8-bg.jpg) #BEDCDA center',
     margin: '-120px',
 
-    probarclass: '',
+    probarclass: '.number_8',
    
   },
   {
@@ -72,7 +72,7 @@ export default [
     bg: 'url(./images/screen-9-bg.jpg) #E8A83E center',
     margin: '-320px',
 
-    probarclass: '',
+    probarclass: '.number_9',
    
   },
 
@@ -81,7 +81,7 @@ export default [
     bg: 'url(./images/screen-10-bg.jpg) center',
     margin: '-320px',
 
-    probarclass: '',
+    probarclass: '.number_10',
    
   }
 

@@ -1,0 +1,12 @@
+export default `
+<a href="javascript:void(0)" class="number number_1">1</a>
+<a href="javascript:void(0)" class="number number_2">2</a>
+<a href="javascript:void(0)" class="number number_3">3</a>
+<a href="javascript:void(0)" class="number number_4">4</a>
+<a href="javascript:void(0)" class="number number_5">5</a>
+<a href="javascript:void(0)" class="number number_6">6</a>
+<a href="javascript:void(0)" class="number number_7">7</a>
+<a href="javascript:void(0)" class="number number_8">8</a>
+<a href="javascript:void(0)" class="number number_9">9</a>
+<a href="javascript:void(0)" class="number number_10">10</a>
+`
