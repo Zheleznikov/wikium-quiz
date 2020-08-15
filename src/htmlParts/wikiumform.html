@@ -1,0 +1,85 @@
+<section id="11" class="hurray">
+  <div class="hurray__content">
+    <img src="./images/hurray-palms.png" alt="" class="hurray__image">
+    <h2 class="hurray__title">Ура! Тест пройден</h2>
+    <p class="hurray__subtitle">Заполните форму и получите результаты</p>
+
+    <!-- === wikium form ===  -->
+
+    <!-- action="https://web.wikium.ru/pl/lite/block-public/process-html?id=821655583" -->
+    <!-- action="http://httpbin.org/post" -->
+
+    <form 
+    target="_blank" 
+    class="form hurray__form" 
+    id="ltForm5141699"
+    action="http://httpbin.org/post"
+    method="post"
+    data-open-new-window="0">
+
+      <input type="hidden" name="formParams[setted_offer_id]">
+
+      <input class="form__input name" type="text" maxlength="60" placeholder="Введите ваш эл. адрес" name="formParams[email]" value="">
+
+      <input class="form__input name" type="text" maxlength="60" placeholder="Введите ваше имя" name="formParams[full_name]" value="">
+
+      <input class="form__input name" type="text" maxlength="60" placeholder="Введите ваш телефон" name="formParams[phone]" value="">
+
+      <button class="button form__button" type="submit" id="button1770796"  onclick="if(window['btnprs5f342a1fc69b7']){return false;}window['btnprs5f342a1fc69b7']=true;setTimeout(function(){window['btnprs5f342a1fc69b7']=false},6000);return true;">Получить результаты</button>
+
+      <input type="hidden" id="2417105f342a1fbd6a7" name="__gc__internal__form__helper" class="__gc__internal__form__helper" value="">
+      <input type="hidden" id="2417105f342a1fbd6a7ref" name="__gc__internal__form__helper_ref" class="__gc__internal__form__helper_ref" value="">
+      <input type="hidden" name="requestTime" value="1597254175">
+      <input type="hidden" name="requestSimpleSign" value="5651baf2ae218419e404fa8371ef905c">
+      <input type="hidden" name="isHtmlWidget" value="1" />
+    </form>
+    <span id="gccounterImgContainer"></span>
+    <!-- === /wikium form ===  -->
+
+     <!-- === wikium script === -->
+    <script>
+      window.onload = function() {
+        let loc = document.getElementById("2417105f342a1fbd6a7");
+        loc.value = window.location.href;
+        let ref = document.getElementById("2417105f342a1fbd6a7ref");
+        ref.value = document.referrer;
+      }
+    </script>
+    
+    <script async defer>
+      window.onload = function() {
+        let statUrl = "https://web.wikium.ru/stat/counter?ref=" + encodeURIComponent(document.referrer) +
+          "&loc=" + encodeURIComponent(document.location.href);
+        document.getElementById('gccounterImgContainer').innerHTML = "<img width=1 height=1 style='display:none' id='gccounterImg' src='" + statUrl + "'/>";
+      }
+    </script>
+     <!-- === /wikium script === -->
+
+  </div>
+</section>
+
+ <!--
+   Что поменялось.
+   - Убрал br
+   - добавил свои классы
+   - убрал пустые инлайн-стили у кнопки
+   - поменял value кнопки "записаться" на "получить результат"
+   - важен ли порядок инпутов?
+   - может быть поменять тип и макс и мин длину инпутов?
+ -->
+
+ 
+
+
+
+<!-- предыдущая форма -->
+
+<!-- <form action="http://httpbin.org/post" class="form hurray__form" method="post">
+  <div class="form__content">
+    <input type="text" name="formParams[full_name]" class="form__input name" placeholder="Имя" required maxlength="16" minlength="2">
+    <input type="text" class="form__input surname" name="formParams[full_name2]" placeholder="Фамилия" maxlength="16" minlength="2">
+    <input type="email" name="formParams[email]" class="form__input email" placeholder="Email" minlength="8">
+    <input type="tel" class="form__input phone" placeholder="Номер телефона" minlength="10" maxlength="11">
+  </div>
+  <button type="" class="button form__button">Получить результаты</button>
+</form> -->

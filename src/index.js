@@ -20,14 +20,21 @@ new SmoothScroll('a[href*="#"]', {
 
 const main = document.querySelector('.main');
 const startTestButton = document.querySelector('.lead__button');
+const resultBlock = document.querySelector('.hurray');
 
 
 sessionStorage.setItem('number', 0);
 sessionStorage.setItem('answer', 0);
 
-startTestButton.addEventListener('click', () => {
+
+
+function getFirstScreen() {
   new Quiz(main, quizData[0], screens[0], removeHash);
-})
+  startTestButton.removeEventListener('click', getFirstScreen);
+
+}
+
+startTestButton.addEventListener('click', getFirstScreen);
 
 
 document.addEventListener("renderScreen", function(e) {
@@ -43,13 +50,14 @@ document.addEventListener("renderScreen", function(e) {
     new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
   } 
  
-  // else if (currentScreen === 10) {
+  else if (currentScreen === 10) {
+    resultBlock.classList.add('hurray_on')
 
-  //   new Hurray(main);
-  //   const form = document.querySelector('.form');
-  //   new Form(form);
+    // new Hurray(main);
+    // const form = document.querySelector('.form');
+    // new Form(form);
     
-  // } 
+  } 
 
   else if (currentScreen === 10) {
     // window.location.hash = '#12';

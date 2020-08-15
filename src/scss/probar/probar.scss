@@ -1,0 +1,17 @@
+.probar {
+  position: fixed;
+  top: calc(50% - 186px);
+  left: 50px;
+  width: 40px;
+  height: 372px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  box-sizing: border-box;
+}

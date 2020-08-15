@@ -1,0 +1,27 @@
+.number {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(90deg, #D9D4E9 0%, #A090A9 100%);
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.19);
+  margin-bottom: 12px;
+  margin-top: 0;
+  text-align: center;
+  // padding-left: 7px;
+  padding-top: 3.5px;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  // line-height: 128.9%;
+  /* identical to box height, or 18px */
+  letter-spacing: -0.05em;
+}
+
+.number__link {
+  text-decoration: none;
+}

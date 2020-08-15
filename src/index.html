@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wikium - Hype.Tech</title>
   <link rel="icon" href="./images/favicon.png">
-  <link  rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index.css">
 
 
 </head>
+
 <body>
   <div class="page">
-  <!-- <iframe name="targettest" style="height: 400px; width: 400px; border: 1px solid black">
 
-    <!-- http://httpbin.org/post -->
-    <!-- https://web.wikium.ru/pl/lite/block-public/process-html?id=821655583 -->
-    <!-- </iframe> --> 
+    @@include('htmlParts/probar.html')
 
-    
 
-    @@include('htmlParts/header.html')
-    @@include('htmlParts/lead.html')
+
+
+    @@include('htmlParts/header.html') @@include('htmlParts/lead.html')
 
     <main class="main">
       <!-- @@include('htmlParts/screen.html') -->
       <!-- @@include('htmlParts/screenTest.html') -->
     </main>
+
+    @@include('./htmlParts/wikiumform.html')
+
+
+
     <footer class="footer">
       <div class="footer__share"></div>
       <div class="footer__sign">
@@ -41,18 +45,11 @@
     </footer>
 
 
-    <div class="popup">
-      <div class="popup__content">
-        <img src="./images/popup-close.png" alt="" class="popup__close">
-        <img src="./images/popup.png" alt="" class="popup__img">
-        <p class="popup__text">За успешное прохождение теста дарим <span class="popup__text_span">подарок</span> — умный календарь с упражнениями для развития памяти, внимания, мышления и трекер полезных привычек  </p>
-        <p class="popup__bold">Скачайте его прямо сейчас!</p>
-        <button class="button popup__button">Скачать</button>
-      </div>
-    </div>
+    @@include('./htmlParts/popup.html')
   </div>
-  
+
   <script src='./index.js'></script>
 
 </body>
+
 </html>
