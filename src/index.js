@@ -1,6 +1,7 @@
-import scroll from "./js/scroll";
+// import scroll from "./js/scroll";
 import screens from "./js/screensArr";
 import results from "./js/resArr";
+import probarElements from './js/probar';
 
 import quizData from "./js/quizData";
 import Quiz from "./js/Quiz";
@@ -8,6 +9,8 @@ import Hurray from "./js/Hurray";
 import Res from "./js/Res";
 import Form from "./js/Form";
 import Popup from "./js/Popup";
+import removeHash from './js/removeHash';
+import { showShare, hideShare } from './js/footer';
 
 const main = document.querySelector(".main");
 const startTestButton = document.querySelector(".lead__button");
@@ -17,9 +20,11 @@ const seeResultButton = document.querySelector(".form__button");
 const page = document.querySelector(".page");
 const wiki = document.querySelector('.wiki');
 
+
 sessionStorage.setItem("number", 0);
 sessionStorage.setItem("answer", 0);
 
+new Popup(document.querySelector('.popup'))
 
 
 function getFirstScreen() {
@@ -28,35 +33,7 @@ function getFirstScreen() {
   probar.classList.add("probar_on");
 }
 
-startTestButton.addEventListener("click", getFirstScreen);
-
-new Popup(document.querySelector('.popup'))
-
-document.addEventListener("renderScreen", (e) => {
-  removeHash();
-
-  const currentScreen = e.detail.screenId;
-  const result = +sessionStorage.getItem("answer");
-
-  console.log("currentScreen - ", currentScreen);
-  console.log("баллы - ", result);
-
-  switch (true) {
-    case currentScreen < 10:
-      new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
-      break;
-    case currentScreen === 10:
-      resultBlock.classList.add("hurray_on");
-      break;
-    case currentScreen === "again":
-      main.innerHTML = "";
-      new Quiz(main, quizData[0], screens[0], removeHash);
-  }
-
-
-});
-
-seeResultButton.addEventListener("click", () => {
+function resultHandle() {
   const result = +sessionStorage.getItem("answer");
   switch (true) {
     case result > 17:
@@ -69,21 +46,66 @@ seeResultButton.addEventListener("click", () => {
       new Res(wiki, results[2]);
       break;
   }
+}
+
+function startQuizAgain() {
+  main.innerHTML = "";
+  wiki.innerHTML = '';
+  probar.innerHTML = probarElements;
+  window.location.href = '#1';
+  probar.classList.add("probar_on");
+  new Quiz(main, quizData[0], screens[0], removeHash);
+  hideShare();
+  startTestButton.removeEventListener("click", getFirstScreen);
+}
+
+
+
+document.addEventListener("renderScreen", (e) => {
+  removeHash();
+  const currentScreen = e.detail.screenId;
+  const result = +sessionStorage.getItem("answer");
+  console.log("currentScreen - ", currentScreen);
+  console.log("баллы - ", result);
+
+  switch (true) {
+    case currentScreen < 10:
+      new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
+      break;
+    case currentScreen === 10:
+      resultBlock.classList.add("hurray_on");
+      resultHandle();
+      showShare();
+
+      break;
+    // case currentScreen === 'result':
+    //   resultHandle();
+    //   showShare();
+    case currentScreen === "again":
+      startQuizAgain();
+      break;
+  }
+
+
 });
 
 
 
-function removeHash() {
-  setTimeout(() => {
-    history.pushState("", document.title, window.location.pathname);
-  }, 1);
-}
+seeResultButton.addEventListener("click", resultHandle);
+startTestButton.addEventListener("click", getFirstScreen);
+
+
 
 // document.querySelectorAll('a').forEach(link => link.addEventListener('click', removeHash));
 
 // TESTING 
 
-resultBlock.classList.add("hurray_on");
+// resultBlock.classList.add("hurray_on");
 // new Form(document.querySelector('.form'));
 
 // new Res(main, results[2]);
+
+// resultBlock.classList.add("hurray_on");
+// new Hurray();
+
+new Quiz(main, quizData[9], screens[9], removeHash);

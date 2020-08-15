@@ -1,10 +1,8 @@
 .footer__share {
   width: 130px;
-  // border: 1px solid red;
   align-self: center;
-  display: flex;
+  display: none;
   flex-direction: column;
-  // justify-content: space-between;
 }
 
 .footer__share_text {
@@ -17,4 +15,8 @@
   letter-spacing: 0.01em;
   /* text collor (black) */
   color: #232323;
+}
+
+.footer__share_on {
+  display: flex;
 }

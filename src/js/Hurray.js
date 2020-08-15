@@ -1,9 +1,8 @@
 export default class Hurray {
-  constructor(main) {
-    this.main = main;
-    this.render();
+  constructor() {
+    // this.render();
     this.button = this.hurray.querySelector('.form__button');
-    // this.handleNext();
+    this.handleNext();
   }
 
 

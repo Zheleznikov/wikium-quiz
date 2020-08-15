@@ -6,10 +6,14 @@
 @import './__modal/footer__modal.scss';
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1440px;
   margin: 100px auto 0;
   // border: 1px solid red;
+}
+
+.footer_all {
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1440px) {
