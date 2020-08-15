@@ -10,7 +10,7 @@ export default [
   {
     number: 2,
     bg: 'url(./images/screen-2-bg.jpg) #FFCF54 center',
-    margin: '-380px',
+    margin: '-240px',
 
     probarclass: '.number_2',
    
@@ -28,7 +28,7 @@ export default [
   {
     number: 4,
     bg: 'url(./images/screen-4-bg.jpg) #FFCA00 center',
-    margin: '-380px',
+    margin: '-240px',
 
     probarclass: '.number_4',
 
@@ -45,7 +45,7 @@ export default [
   {
     number: 6,
     bg: 'url(./images/screen-6-bg.jpg) #B6DAD6 center',
-    margin: '-500px',
+    margin: '0',
 
     probarclass: '.number_6',
     
@@ -62,7 +62,7 @@ export default [
   {
     number: 8,
     bg: 'url(./images/screen-8-bg.jpg) #BEDCDA center',
-    margin: '-120px',
+    margin: '-260px',
 
     probarclass: '.number_8',
    

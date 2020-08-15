@@ -5,13 +5,13 @@ export default `
   <div class="screen__content">
     <div class="screen__main screen__main_8">
       <div class="screen__number">8</div>
-      <h2 class="screen__title screen__title_2">
+      <h2 id="ans8" class="screen__title screen__title_2">
         Сколько квадратов изображено на этом рисунке? 
       </h2>
 
 
       <!-- buttons -->
-      <div id="ans8" class="screen__buttons screen__buttons_6">
+      <div  class="screen__buttons screen__buttons_6">
         <div style="display: flex; flex-wrap:wrap;">
           <div class="screen__icon-container">
             <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">

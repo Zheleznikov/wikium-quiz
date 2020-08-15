@@ -7,14 +7,14 @@ export default `
     </p>
     <div class="screen__main">
       <div class="screen__number">5</div>
-      <h2 class="screen__title screen__title_2">Сколько слов на тему «искусство» содержится в этом наборе букв?
+      <h2 id="ans5" class="screen__title screen__title_2">Сколько слов на тему «искусство» содержится в этом наборе букв?
       </h2>
 
       <p class="screen__title_span">
         Олагкартинаопрвнхолстопрдомгнанотаортвыкистьорткрхрустрмузыкаофжщзустихорснростна
       </p>
 
-      <div id="ans5" class="screen__buttons">
+      <div  class="screen__buttons">
         <div class="screen__icon-container">
           <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans5">

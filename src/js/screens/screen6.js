@@ -8,13 +8,13 @@ export default `
     </p>
     <div class="screen__main screen__main_6">
       <div class="screen__number">6</div>
-      <h2 class="screen__title screen__title_2">Посмотрите на картинку. Сколько ягод черники темнее остальных? 
+      <h2 id="ans6"  class="screen__title screen__title_2">Посмотрите на картинку. Сколько ягод черники темнее остальных? 
 
       </h2>
 
 
 <!-- buttons -->
-      <div id="ans6" class="screen__buttons screen__buttons_6">
+      <div class="screen__buttons screen__buttons_6">
         <div style="display: flex; flex-wrap:wrap; max-width:240px">
           <div class="screen__icon-container">
             <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">

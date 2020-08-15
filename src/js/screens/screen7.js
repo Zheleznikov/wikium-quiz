@@ -7,7 +7,7 @@ export default `
     </p>
     <div class="screen__main">
       <div class="screen__number">7</div>
-      <h2  class="screen__title screen__title_2">Попытайтесь определить эту закономерность и понять, что должно скрываться под знаком вопроса?
+      <h2 id="ans7" class="screen__title screen__title_2">Попытайтесь определить эту закономерность и понять, что должно скрываться под знаком вопроса?
       </h2>
       <h2 class="screen__title screen__title_7">6, 7 = 2 &nbsp;&nbsp;&nbsp
         3, 9 = 7 
@@ -19,7 +19,7 @@ export default `
 
     
 
-      <div id="ans7" class="screen__buttons">
+      <div  class="screen__buttons">
         <div class="screen__icon-container">
           <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans7">

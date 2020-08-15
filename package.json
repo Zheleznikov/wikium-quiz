@@ -50,7 +50,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development gulp dev",
     "build": "cross-env NODE_ENV=production gulp build",
-    "deploy": "npm run build && scp -r ./build* root@84.38.180.135:/home/jbl/"
+    "deploy": "npm run build && scp -r ./build* root@84.38.180.135:/home/wiki/"
   },
   "repository": {
     "type": "git",

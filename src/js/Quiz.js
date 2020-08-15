@@ -9,6 +9,7 @@ export default class Quiz {
 
     this.render();
 
+
     this.option1 = this.screen.querySelector(".option-1");
     this.option2 = this.screen.querySelector(".option-2");
     this.option3 = this.screen.querySelector(".option-3");
@@ -40,6 +41,8 @@ export default class Quiz {
     this.handleNext();
     this.probarHandle();
   }
+
+
 
   // генерим событие чтобы снаружи можно было его отлавливать
   makeEventRenderScreen() {
@@ -114,74 +117,46 @@ export default class Quiz {
     this.comment.classList.add("comment_on");
     this.options.forEach((option) => option.setAttribute("disabled", true));
     this.removeHash();
+    this.currentResultHandle();
+  }
+
+  currentResultHandle() {
+    const value = +this.option1.getAttribute("data-value");
+    sessionStorage.setItem(
+      "answer",
+      +sessionStorage.getItem("answer") + value
+    );
+
   }
 
   // обработчики кнопок
 
   handle1() {
-    this.option1.addEventListener("click", () => {
-      this.commonHanlde();
-      this.probarHandleIsCorrect(this.option1);
-
-      this.hint1.classList.add("screen__hint_on");
-      this.icon1.classList.add("screen__option_icon_on");
-      const value = +this.option1.getAttribute("data-value");
-      sessionStorage.setItem(
-        "answer",
-        +sessionStorage.getItem("answer") + value
-      );
-    });
+    this.handle(this.option1, this.hint1, this.icon1);
   }
 
   handle2() {
-    this.option2.addEventListener("click", () => {
-      this.commonHanlde();
-      this.probarHandleIsCorrect(this.option2);
+    this.handle(this.option2, this.hint2, this.icon2);
 
-
-      this.hint2.classList.add("screen__hint_on");
-      this.icon2.classList.add("screen__option_icon_on");
-
-      const value = +this.option2.getAttribute("data-value");
-      sessionStorage.setItem(
-        "answer",
-        +sessionStorage.getItem("answer") + value
-      );
-    });
   }
 
   handle3() {
-    this.option3.addEventListener("click", () => {
-      this.hint3.classList.add("screen__hint_on");
-      this.commonHanlde();
-      this.probarHandleIsCorrect(this.option3);
+    this.handle(this.option3, this.hint3, this.icon3);
 
-
-      this.icon3.classList.add("screen__option_icon_on");
-      const value = +this.option3.getAttribute("data-value");
-      sessionStorage.setItem(
-        "answer",
-        +sessionStorage.getItem("answer") + value
-      );
-    });
   }
 
   handle4() {
-    this.option4.addEventListener("click", () => {
+    this.handle(this.option4, this.hint4, this.icon4);
+  }
+
+  handle(option, hint, icon) {
+    option.addEventListener("click", () => {
       this.commonHanlde();
-      this.probarHandleIsCorrect(this.option4);
-
-
-      this.hint4.classList.add("screen__hint_on");
-
-      this.icon4.classList.add("screen__option_icon_on");
-
-      const value = +this.option4.getAttribute("data-value");
-      sessionStorage.setItem(
-        "answer",
-        +sessionStorage.getItem("answer") + value
-      );
+      this.probarHandleIsCorrect(option);
+      hint.classList.add("screen__hint_on");
+      icon.classList.add("screen__option_icon_on");
     });
+
   }
 
   // обработчик куда какую иконку добавить
@@ -194,7 +169,6 @@ export default class Quiz {
   render() {
     this.screen = document.createElement("div");
     this.screen.innerHTML = this.screenHtml;
-
     this.main.appendChild(this.screen);
   }
 }

@@ -6,9 +6,9 @@ export default `
 
     <div class="screen__main">
       <div class="screen__number">1</div>
-      <h2 class="screen__title">Ситуация: у вас первый день на новой работе, и вы остались наедине с коллегой. Что будете делать? </h2>
+      <h2 id="ans1" class="screen__title">Ситуация: у вас первый день на новой работе, и вы остались наедине с коллегой. Что будете делать? </h2>
 
-      <div id="ans1" class="screen__buttons">
+      <div class="screen__buttons">
 
       <a class="screen__link" href="#ans1">
       <button data-value="2" class="screen__option option-1">Уточню что-то по общим вопросам, а потом постараюсь найти тему для разговора 

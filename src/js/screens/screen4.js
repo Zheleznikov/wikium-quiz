@@ -7,9 +7,9 @@ export default `
 
     <div class="screen__main">
       <div class="screen__number">4</div>
-      <h2 class="screen__title screen__title_4">Вы очень много работаете над проектом вместе с сотрудником из другого отдела. Проблема в том, что ваш напарник безответственный и перекладывает всю вину на вас. Начальник недоволен и грозится вас уволить. Придется принять какое-то решение.</h2>
+      <h2 id="ans4" class="screen__title screen__title_4">Вы очень много работаете над проектом вместе с сотрудником из другого отдела. Проблема в том, что ваш напарник безответственный и перекладывает всю вину на вас. Начальник недоволен и грозится вас уволить. Придется принять какое-то решение.</h2>
 
-      <div id="ans4" class="screen__buttons">
+      <div  class="screen__buttons">
 
       <a class="screen__link" href="#ans4">
         <button data-value="2" class="screen__option option-1">
@@ -63,7 +63,7 @@ export default `
         <a class="screen__link" href="#ans4">
 
         <button data-value="0" class="screen__option option-4">Скажу коллеге, что его помощь не требуется. Справлюсь с проектом самостоятельно
-            <img src="./images/hint-wrong.jpg" alt="" class="screen__option_icon icon-4">
+            <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-4">
           </button>
           </a>
 

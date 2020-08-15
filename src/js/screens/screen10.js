@@ -10,13 +10,13 @@ export default `
 
     <div class="screen__main">
       <div class="screen__number">10</div>
-      <h2 class="screen__title screen__title_9">
+      <h2 id="ans10" class="screen__title screen__title_9">
         Девушка встречает льва и единорога в лесу. Лев лжет каждый понедельник, вторник и среду, а в другие дни он говорит правду. Единорог лжет по четвергам, пятницам и субботам, а в остальные дни недели он говорит правду. «Вчера я лгал», — сказал лев девушке.
         «Я тоже»,— сказал единорог. Какой это день?
 
       </h2>
 
-      <div id="ans10" class="screen__buttons">
+      <div  class="screen__buttons">
         <div class="screen__icon-container">
           <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans10">
@@ -70,7 +70,7 @@ export default `
 
       <div class="screen__hint screen__hint_9 hint-2">
         <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
-        <p class="screen__hint_text screen__hint_text_10"><span class="screen__hint_right">
+        <p class="screen__hint_text screen__hint_text_10"><span class="screen__hint_wrong">
           Неверно.
         </span> К сожалению, вы ошиблись. А вот правильный ответ.
         </p>
@@ -82,7 +82,7 @@ export default `
 
       <div class="screen__hint screen__hint_9 hint-3">
         <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
-        <p class="screen__hint_text"><span class="screen__hint_wrong">
+        <p class="screen__hint_text"><span class="screen__hint_correct">
           Верно.
         </span> Ничего себе! Это правильный ответ.
 
@@ -91,7 +91,7 @@ export default `
 
       <div class="screen__hint screen__hint_9 hint-4">
         <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
-        <p class="screen__hint_text"><span class="screen__hint_right">
+        <p class="screen__hint_text"><span class="screen__hint_wrong">
           Неверно. 
         </span> К сожалению, вы ошиблись. А вот правильный ответ.
         </p>

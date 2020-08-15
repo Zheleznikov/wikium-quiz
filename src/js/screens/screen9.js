@@ -6,12 +6,12 @@ export default `
 
     <div class="screen__main">
       <div class="screen__number">9</div>
-      <h2 class="screen__title screen__title_9">
+      <h2  id="ans9" class="screen__title screen__title_9">
         А теперь давайте проверим, сможете ли вы побывать в роли Шерлока Холмса? На борту круизного лайнера во время шторма был убит известный меценат мистер Блэк. Детектив сразу заподозрил троих пассажиров: художник утверждал, что в это время писал картину в
         жанре кубизма и она получилась просто идеальной, жена жаловалась, что страдала от морской болезни и лежала в кровати, а капитан уверял, что пытался вести корабль сквозь бурю. Так кто же убил мецената?
       </h2>
 
-      <div id="ans9" class="screen__buttons">
+      <div  class="screen__buttons">
         <div class="screen__icon-container">
           <img src="./images/option-correct.jpg" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans9">

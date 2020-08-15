@@ -7,14 +7,14 @@ export default `
 
     <div class="screen__main">
       <div class="screen__number">3</div>
-      <h2 class="screen__title">Коллега ушел в отпуск, и у вас стало еще больше работы: приезжаете рано и задерживаетесь допоздна. Ваш начальник кладет на стол очередную стопку документов для нового проекта. Как вы поступите?  </h2>
+      <h2 id="ans3"  class="screen__title">Коллега ушел в отпуск, и у вас стало еще больше работы: приезжаете рано и задерживаетесь допоздна. Ваш начальник кладет на стол очередную стопку документов для нового проекта. Как вы поступите?  </h2>
 
-      <div id="ans3" class="screen__buttons">
+      <div class="screen__buttons">
 
       <a class="screen__link" href="#ans3">
 
         <button data-value="0" class="screen__option option-1">
-          Налью кружку кофе, отложу все домашние дела и приступлю к работе (показываем подсказку
+          Налью кружку кофе, отложу все домашние дела и приступлю к работе
           <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-1">
           </button>
           </a>

@@ -1,4 +1,4 @@
-// import scroll from "./js/scroll";
+import scroll from "./js/scroll";
 import screens from "./js/screensArr";
 import results from "./js/resArr";
 import probarElements from './js/probar';
@@ -20,17 +20,18 @@ const seeResultButton = document.querySelector(".form__button");
 const page = document.querySelector(".page");
 const wiki = document.querySelector('.wiki');
 
-
-sessionStorage.setItem("number", 0);
-sessionStorage.setItem("answer", 0);
+// sessionStorage.setItem("number", 0);
 
 new Popup(document.querySelector('.popup'))
+
 
 
 function getFirstScreen() {
   new Quiz(main, quizData[0], screens[0], removeHash);
   startTestButton.removeEventListener("click", getFirstScreen);
   probar.classList.add("probar_on");
+  sessionStorage.setItem("answer", 0);
+
 }
 
 function resultHandle() {
@@ -49,10 +50,10 @@ function resultHandle() {
 }
 
 function startQuizAgain() {
+  sessionStorage.setItem("answer", 0);
   main.innerHTML = "";
   wiki.innerHTML = '';
   probar.innerHTML = probarElements;
-  window.location.href = '#1';
   probar.classList.add("probar_on");
   new Quiz(main, quizData[0], screens[0], removeHash);
   hideShare();
@@ -73,7 +74,7 @@ document.addEventListener("renderScreen", (e) => {
       new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
       break;
     case currentScreen === 10:
-      resultBlock.classList.add("hurray_on");
+      // resultBlock.classList.add("hurray_on");
       resultHandle();
       showShare();
 
@@ -107,5 +108,4 @@ startTestButton.addEventListener("click", getFirstScreen);
 
 // resultBlock.classList.add("hurray_on");
 // new Hurray();
-
 new Quiz(main, quizData[9], screens[9], removeHash);

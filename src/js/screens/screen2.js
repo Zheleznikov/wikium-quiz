@@ -7,9 +7,9 @@ export default `
 
     <div class="screen__main">
       <div class="screen__number">2</div>
-      <h2 class="screen__title">Вас назначили ответственным за крупный проект, который позволит вывести компанию на новый уровень. Ваши действия? </h2>
+      <h2 id="ans2" class="screen__title">Вас назначили ответственным за крупный проект, который позволит вывести компанию на новый уровень. Ваши действия? </h2>
 
-      <div id="ans2" class="screen__buttons">
+      <div  class="screen__buttons">
 
       <a class="screen__link" href="#ans2">
         <button data-value="0" class="screen__option option-1">Обрадуюсь, а потом попрошу повышение и прибавку к зарплате

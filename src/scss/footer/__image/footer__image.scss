@@ -1,3 +1,15 @@
 .footer__image {
-  // border: 1px solid red;
+ width: 90px;
+ height: 90px;
+ border-radius: 50%;
+ background:  #AA12FB;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 18px solid rgba(143, 106, 255, 0.5);
+ animation: pulsate-fwd 2s ease-in-out infinite both;
+
 }
+
+@keyframes pulsate-fwd{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+
