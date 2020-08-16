@@ -108,4 +108,4 @@ startTestButton.addEventListener("click", getFirstScreen);
 
 // resultBlock.classList.add("hurray_on");
 // new Hurray();
-new Quiz(main, quizData[9], screens[9], removeHash);
+// new Quiz(main, quizData[9], screens[9], removeHash);
