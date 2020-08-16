@@ -14,7 +14,7 @@ export default `
       <a class="screen__link" href="#ans4">
         <button data-value="2" class="screen__option option-1">
           Встречусь с коллегой в неформальной обстановке, попробую поговорить по душам и решить проблему
-           <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-1">
+           <img src="./images/option-correct.png" alt="" class="screen__option_icon icon-1">
           </button>
           </a>
 
@@ -31,7 +31,7 @@ export default `
 
         <button data-value="0" class="screen__option option-2">
           Пока никого нет, зайду к начальнику и расскажу всю правду. Пусть пересмотрит свою позицию
-          <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-2">
+          <img src="./images/option-wrong.png" alt="" class="screen__option_icon icon-2">
           </button>
           </a>
 
@@ -47,7 +47,7 @@ export default `
 
         <button data-value="0" class="screen__option option-3">
           Попрошу начальника поменять партнера по проекту 
-           <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-3">
+           <img src="./images/option-wrong.png" alt="" class="screen__option_icon icon-3">
           </button>
 
           </a>
@@ -63,7 +63,7 @@ export default `
         <a class="screen__link" href="#ans4">
 
         <button data-value="0" class="screen__option option-4">Скажу коллеге, что его помощь не требуется. Справлюсь с проектом самостоятельно
-            <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-4">
+            <img src="./images/option-wrong.png" alt="" class="screen__option_icon icon-4">
           </button>
           </a>
 

@@ -10,4 +10,9 @@
   margin-right: 8px;
 }
 
+@media screen and (max-width: 768px) {
+  .screen__comment {
+    max-width: 480px;
+  }
+}
 

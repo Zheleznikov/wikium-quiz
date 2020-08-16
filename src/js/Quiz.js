@@ -150,25 +150,25 @@ export default class Quiz {
   }
 
   mediaQueryHandle() {
+
     if (window.matchMedia("(max-width: 550px)").matches) {
       this.bg.style.background = this.data.bgAdap;
       this.content.style.marginTop = this.data.marginAdap;
+    } else if (window.matchMedia("(max-width: 769px)").matches) {
+      this.bg.style.background = this.data.bg;
+      this.content.style.marginTop = this.data.marginAdap768;
     } else {
       this.bg.style.background = this.data.bg;
       this.content.style.marginTop = this.data.margin;
-
     }
   }
-
-
 
   // обработчик куда какую иконку добавить
   renderHandle() {
     this.screen.id = this.data.number;
     this.content.style.marginTop = this.data.margin;
     this.mediaQueryHandle();
-    // window.addEventListener('resize', this.mediaQueryHandle.bind(this));
-
+    window.addEventListener('resize', this.mediaQueryHandle.bind(this));
   }
 
   render() {

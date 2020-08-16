@@ -21,3 +21,11 @@
   justify-content: center;
   align-items: center;
 }
+
+
+@media screen and (max-width: 768px) {
+  .screen__number {
+    top: 0px;
+    right: 0px;
+  }
+}

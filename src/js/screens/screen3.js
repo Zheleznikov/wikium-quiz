@@ -15,7 +15,7 @@ export default `
 
         <button data-value="0" class="screen__option option-1">
           Налью кружку кофе, отложу все домашние дела и приступлю к работе
-          <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-1">
+          <img src="./images/option-wrong.png" alt="" class="screen__option_icon icon-1">
           </button>
           </a>
 
@@ -33,7 +33,7 @@ export default `
 
         <button data-value="1" class="screen__option option-2">
           Честно скажу начальнику, что не справляюсь
-          <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-2">
+          <img src="./images/option-correct.png" alt="" class="screen__option_icon icon-2">
           </button>
           </a>
 
@@ -51,7 +51,7 @@ export default `
 
           <button data-value="0" class="screen__option option-3">
             Положу документы на стол к коллеге. Вернется из отпуска — сделает            
-            <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-3">
+            <img src="./images/option-wrong.png" alt="" class="screen__option_icon icon-3">
           </button>
 
           </a>
@@ -65,7 +65,7 @@ export default `
 
         <a class="screen__link" href="#ans3">
           <button data-value="2" class="screen__option option-4">Составлю примерный план действий, обозначу таймлайн. Затем поделюсь с начальником и коллегами
-              <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-4">
+              <img src="./images/option-correct.png" alt="" class="screen__option_icon icon-4">
             </button>
         </a>
 

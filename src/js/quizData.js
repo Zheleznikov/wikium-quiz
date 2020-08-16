@@ -2,18 +2,21 @@ export default [
   {
     number: 1,
     margin: '-140px',
-    marginAdap: '-80px',
-    bg: 'url(./images/screen-1-bg.jpg) #FEDDF0 center',
+    marginAdap: '-100px',
+    marginAdap768: '-200px',
+    bg: 'url(./images/screen-1-bg.jpg) center',
     bgAdap: 'url(./images/screen-1-bg-550.jpg) #FEDDF0 center no-repeat',
-    bgAdapSize: 'cover',
     probarclass: '.number_1',
 
   },
 
   {
     number: 2,
-    bg: 'url(./images/screen-2-bg.jpg) #FFCF54 center',
+    bg: 'url(./images/screen-2-bg-test.jpg) repeat',
     margin: '-240px',
+    marginAdap: '-70px',
+    marginAdap768: '-200px',
+    bgAdap: 'url(./images/screen-2-bg-550.jpg)  center ',
 
     probarclass: '.number_2',
    
@@ -23,6 +26,9 @@ export default [
     number: 3,
     bg: 'url(./images/screen-3-bg.jpg) #A3BFC6 center',
     margin: '-140px',
+    marginAdap: '-70px',
+    marginAdap768: '-240px',
+    bgAdap: 'url(./images/screen-3-bg-550.jpg)  center ',
 
     probarclass: '.number_3',
    

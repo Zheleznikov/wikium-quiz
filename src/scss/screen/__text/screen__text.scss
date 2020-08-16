@@ -36,3 +36,17 @@
 
   color: #232323;
 }
+
+
+@media screen and (max-width: 768px) {
+  .screen__text {
+    font-size: 14px;
+  }
+
+  .screen__text_small {
+    font-size: 14px;
+    max-width: 480px;
+    margin: 14px auto;
+
+  }
+}

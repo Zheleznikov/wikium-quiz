@@ -14,17 +14,29 @@
 @import './__icon-container/screen__icon-container.scss';
 @import './__link/screen__link.scss';
 @import './__img/screen__img.scss';
-
 .screen {
   // height: 500px;
   border-top: 1px solid $main-bg;
   padding-top: 180px;
   margin-bottom: 200px;
- a {
-   text-decoration: none;
- }
+  a {
+    text-decoration: none;
+  }
 }
 
-.screen_5 {
-  // margin-bottom: 550px;
+@media screen and (max-width: 768px) {
+  .screen {
+    margin-bottom: 120px;
+    padding-top: 120px;
+
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .screen {
+    margin-bottom: 70px;
+    padding-top: 70px;
+
+  }
 }

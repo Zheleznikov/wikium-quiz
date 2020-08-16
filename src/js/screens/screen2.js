@@ -13,7 +13,7 @@ export default `
 
       <a class="screen__link" href="#ans2">
         <button data-value="0" class="screen__option option-1">Обрадуюсь, а потом попрошу повышение и прибавку к зарплате
-          <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-1">
+          <img src="./images/option-wrong.png" alt="" class="screen__option_icon icon-1">
           </button>
           </a>
 
@@ -26,7 +26,7 @@ export default `
 
         <a class="screen__link" href="#ans2">
         <button data-value="1" class="screen__option option-2">Спрошу, можно ли мне скооперироваться с другими сотрудниками для работы
-          <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-2">
+          <img src="./images/option-correct.png" alt="" class="screen__option_icon icon-2">
           </button>
           </a>
 
@@ -40,7 +40,7 @@ export default `
         <a class="screen__link" href="#ans2">
         <button data-value="0" class="screen__option option-3">
           Узнаю, к кому подходить с вопросами по проекту
-            <img src="./images/option-wrong.jpg" alt="" class="screen__option_icon icon-3">
+            <img src="./images/option-wrong.png" alt="" class="screen__option_icon icon-3">
           </button>
           </a>
 
@@ -54,7 +54,7 @@ export default `
 
         <a class="screen__link" href="#ans2">
         <button data-value="2" class="screen__option option-4">Составлю примерный план действий, обозначу таймлайн. Затем поделюсь с начальником и коллегами
-            <img src="./images/option-correct.jpg" alt="" class="screen__option_icon icon-4">
+            <img src="./images/option-correct.png" alt="" class="screen__option_icon icon-4">
           </button>
           </a>
 

@@ -8,3 +8,9 @@
 .screen__icon_6, .screen__icon_7, .screen__icon_8 {
   margin-left: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .screen__icon {
+    margin-left: 0;
+  }
+}
