@@ -7,20 +7,15 @@
   border: none;
   outline: none;
   padding-left: 16px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 128.9%;
   /* identical to box height, or 18px */
-
   letter-spacing: -0.05em;
   color: #232323;
-
-  /* Вторичный текст */
-
-
+  box-sizing: border-box;
 }
 
 .form__input::placeholder {
@@ -28,3 +23,10 @@
   color: #a59baa;
 }
 
+@media screen and (max-width: 768px) {
+  .form__input {
+    margin: 0 auto 12px;
+    font-size: 16px;
+
+  }
+}

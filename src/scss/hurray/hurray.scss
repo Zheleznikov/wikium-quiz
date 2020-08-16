@@ -5,10 +5,24 @@
 @import './__title/hurray__title.scss';
 
 .hurray {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
   display: none;
 }
 
+
+
 .hurray_on {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .hurray {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hurray {
+    margin-bottom: 70px;
+  }
 }

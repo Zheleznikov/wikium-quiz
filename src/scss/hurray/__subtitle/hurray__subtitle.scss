@@ -1,3 +1,11 @@
 .hurray__subtitle {
   @include res-subtitle;
 }
+
+
+@media screen and (max-width: 768px) {
+  .hurray__subtitle {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
