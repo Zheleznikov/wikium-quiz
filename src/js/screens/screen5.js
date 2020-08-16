@@ -5,7 +5,7 @@ export default `
     <p class="screen__pre">
       Насколько хорошо у вас развиты коммуникативные навыки мы проверили. А что насчет концентрации внимания?
     </p>
-    <div class="screen__main">
+    <div class="screen__main screen__main_5">
       <div class="screen__number">5</div>
       <h2 id="ans5" class="screen__title screen__title_2">Сколько слов на тему «искусство» содержится в этом наборе букв?
       </h2>
@@ -14,9 +14,9 @@ export default `
         Олагкартинаопрвнхолстопрдомгнанотаортвыкистьорткрхрустрмузыкаофжщзустихорснростна
       </p>
 
-      <div  class="screen__buttons">
+      <div  class="screen__buttons screen__buttons_5">
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans5">
             <button data-value="0" class="screen__option screen__option_short option-1">
               3
@@ -25,7 +25,7 @@ export default `
         </div>
 
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-2">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-2">
           <a href="#ans5">
           <button data-value="0" class="screen__option screen__option_short option-2">
             4
@@ -33,7 +33,7 @@ export default `
            </a>
         </div>
         <div class="screen__icon-container">
-          <img src="./images/option-correct.jpg" class="screen__option_icon screen__option_icon_small icon-3">
+          <img src="./images/option-correct.png" class="screen__option_icon screen__option_icon_small icon-3">
 
           <a href="#ans5">
           <button data-value="2" class="screen__option screen__option_short option-3">
@@ -43,7 +43,7 @@ export default `
         </div>
 
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-4 ">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-4 ">
           <a href="#ans5">
           <button data-value="0" class="screen__option screen__option_short option-4">
             6

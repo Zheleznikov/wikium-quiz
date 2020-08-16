@@ -59,7 +59,7 @@ export default [
     margin: '-260px',
     probarclass: '.number_5',
     marginAdap: '-260px',
-    marginAdap768: '-60px',
+    marginAdap768: '-120px',
     bgAdap: 'url(./images/screen-5-bg-550.jpg)  center ',
     bgAdap768: 'url(./images/screen-5-bg-768.jpg) center no-repeat',
   },

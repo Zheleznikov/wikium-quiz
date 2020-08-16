@@ -21,8 +21,15 @@
   margin: -350px auto 20px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
   .screen__pre {
+    margin: -310px auto 100px;
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .screen__pre {
+    margin: -220px auto 100px;
   }
 }
