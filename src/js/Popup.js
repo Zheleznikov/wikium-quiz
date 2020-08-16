@@ -1,7 +1,10 @@
 export default class Popup {
-  constructor(popup) {
+  constructor(popup, openButton) {
     this.popup = popup;
-    this.closeButton = this.popup.querySelector('.popup__close')
+    this.openButton = openButton;
+    console.log(this.popup)
+
+    this.closeButton = this.popup.querySelector('.popup__close');
 
     this.handle();
   }
@@ -26,8 +29,8 @@ export default class Popup {
   }
 
   handle() {
-    this.closeButton.addEventListener('click', () => this.close());
-    document.querySelector('.footer__modal').addEventListener("click", this.open.bind(this));
+    // this.closeButton.addEventListener('click', () => this.close());
+    this.openButton.addEventListener("click", this.open.bind(this));
     this.popup.addEventListener("click", this.superClose.bind(this));
     window.addEventListener("keydown", this.superClose.bind(this));
   }

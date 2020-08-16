@@ -3,4 +3,12 @@
   top: 8px;
   right: 8px;
   cursor: pointer;
+  z-index: 10;
+}
+
+.popup__close_wikium {
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
 }
