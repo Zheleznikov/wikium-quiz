@@ -11,6 +11,7 @@ import Form from "./js/Form";
 import Popup from "./js/Popup";
 import removeHash from "./js/removeHash";
 import { showShare, hideShare } from "./js/footer";
+import showLoader from './js/loader';
 
 const main = document.querySelector(".main");
 const startTestButton = document.querySelector(".lead__button");
@@ -82,10 +83,6 @@ function whichScreenNextHandle(e) {
      resultBlock.classList.add("hurray_on");
      new Popup (wikium, seeResultButton);
      resultHandle();
-
-      // resultHandle();
-      // showShare();
-
       break;
     // case currentScreen === 'result':
     //   resultHandle();
@@ -99,21 +96,18 @@ function whichScreenNextHandle(e) {
 
 
 document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
-// seeResultButton.addEventListener("click", resultHandle);
+seeResultButton.addEventListener("click", showLoader);
 // startTestButton.addEventListener("click", getFirstScreen);
 
 document.querySelectorAll('a').forEach(link => link.addEventListener('click', removeHash));
 
 // TESTING
 
+
 // resultBlock.classList.add("hurray_on");
-// new Form(document.querySelector('.form'));
+// new Popup (wikium, seeResultButton);
+// resultHandle();
 
-//  new Res(main, results[2]);
+new Quiz(main, quizData[8], screens[8], removeHash);
 
-resultBlock.classList.add("hurray_on");
-new Popup (wikium, seeResultButton);
-resultHandle();
 
-// new Hurray();
-// new Quiz(main, quizData[9], screens[9], removeHash);
