@@ -4,7 +4,7 @@ export default `
   <div class="screen__bg"></div>
   <div class="screen__content">
 
-    <p class="screen__pre screen__pre_6">
+    <p class="screen__pre screen__pre_10">
       Последний вопрос — самый сложный. Подобные логические задачи предлагают решить кандидатам в таких компаниях как Google и Microsoft.
     </p>
 
@@ -16,9 +16,9 @@ export default `
 
       </h2>
 
-      <div  class="screen__buttons">
+      <div  class="screen__buttons screen__buttons_10">
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-1">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small screen__icon_10 icon-1">
           <a href="#ans10">
             <button data-value="0" class="screen__option screen__option_custom option-1">
               вторник 
@@ -27,7 +27,7 @@ export default `
         </div>
 
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-2">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small screen__icon_10 icon-2">
           <a href="#ans10">
             <button data-value="0" class="screen__option screen__option_custom option-2">
               среда
@@ -35,7 +35,7 @@ export default `
           </a>
         </div>
         <div class="screen__icon-container">
-          <img src="./images/option-correct.png" class="screen__option_icon screen__option_icon_small icon-3">
+          <img src="./images/option-correct.png" class="screen__option_icon screen__option_icon_small screen__icon_10 icon-3">
 
           <a href="#ans10">
             <button data-value="2" class="screen__option screen__option_custom option-3">
@@ -45,7 +45,7 @@ export default `
         </div>
 
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-4 ">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small screen__icon_10 icon-4 ">
           <a href="#ans10">
             <button data-value="0" class="screen__option screen__option_custom option-4">
               пятница
@@ -68,7 +68,7 @@ export default `
         </p>
       </div>
 
-      <div class="screen__hint screen__hint_9 hint-2">
+      <div class="screen__hint screen__hint_10 hint-2">
         <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
         <p class="screen__hint_text screen__hint_text_10"><span class="screen__hint_wrong">
           Неверно.
@@ -80,7 +80,7 @@ export default `
         </p>
       </div>
 
-      <div class="screen__hint screen__hint_9 hint-3">
+      <div class="screen__hint screen__hint_10 hint-3">
         <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
         <p class="screen__hint_text"><span class="screen__hint_correct">
           Верно.
@@ -89,7 +89,7 @@ export default `
         </p>
       </div>
 
-      <div class="screen__hint screen__hint_9 hint-4">
+      <div class="screen__hint screen__hint_10 hint-4">
         <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
         <p class="screen__hint_text"><span class="screen__hint_wrong">
           Неверно. 
