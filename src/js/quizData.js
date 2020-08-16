@@ -2,7 +2,10 @@ export default [
   {
     number: 1,
     margin: '-140px',
+    marginAdap: '-80px',
     bg: 'url(./images/screen-1-bg.jpg) #FEDDF0 center',
+    bgAdap: 'url(./images/screen-1-bg-550.jpg) #FEDDF0 center no-repeat',
+    bgAdapSize: 'cover',
     probarclass: '.number_1',
 
   },

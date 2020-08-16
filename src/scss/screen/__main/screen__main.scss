@@ -35,7 +35,14 @@
 
 @media screen and (max-width: 1001px) {
   .screen__main {
-    width: 100%;
+    width: 90%;
     // padding: 28px 0 38px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .screen__main {
+    max-width: 480px;
   }
 }

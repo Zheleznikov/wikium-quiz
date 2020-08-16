@@ -73,3 +73,9 @@
   border: 1px solid $wrong-color;
   border-right: 8px solid $wrong-color;
 }
+
+@media screen and (max-width: 768px) {
+  .screen__option {
+    font-size: 14px;
+  }
+}

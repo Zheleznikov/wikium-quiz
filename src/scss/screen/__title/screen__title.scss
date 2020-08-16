@@ -34,3 +34,9 @@
 .screen__title_9 {
   max-width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .screen__title {
+    font-size: 18px;
+  }
+}

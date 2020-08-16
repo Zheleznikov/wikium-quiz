@@ -9,7 +9,6 @@ export default class Quiz {
 
     this.render();
 
-
     this.option1 = this.screen.querySelector(".option-1");
     this.option2 = this.screen.querySelector(".option-2");
     this.option3 = this.screen.querySelector(".option-3");
@@ -42,8 +41,6 @@ export default class Quiz {
     this.probarHandle();
   }
 
-
-
   // генерим событие чтобы снаружи можно было его отлавливать
   makeEventRenderScreen() {
     const next = this.data.number;
@@ -67,7 +64,8 @@ export default class Quiz {
       case true:
         this.probarIcon.classList.remove("number_current");
         this.probarIcon.classList.add("number_correct");
-        this.probarIcon.querySelector("img").src = "./images/number-correct.svg";
+        this.probarIcon.querySelector("img").src =
+          "./images/number-correct.svg";
         break;
       case false:
         this.probarIcon.classList.remove("number_current");
@@ -75,7 +73,6 @@ export default class Quiz {
         this.probarIcon.querySelector("img").src = "./images/number-wrong.svg";
         break;
     }
- 
   }
 
   handleNext() {
@@ -122,11 +119,7 @@ export default class Quiz {
 
   currentResultHandle() {
     const value = +this.option1.getAttribute("data-value");
-    sessionStorage.setItem(
-      "answer",
-      +sessionStorage.getItem("answer") + value
-    );
-
+    sessionStorage.setItem("answer", +sessionStorage.getItem("answer") + value);
   }
 
   // обработчики кнопок
@@ -137,12 +130,10 @@ export default class Quiz {
 
   handle2() {
     this.handle(this.option2, this.hint2, this.icon2);
-
   }
 
   handle3() {
     this.handle(this.option3, this.hint3, this.icon3);
-
   }
 
   handle4() {
@@ -156,14 +147,28 @@ export default class Quiz {
       hint.classList.add("screen__hint_on");
       icon.classList.add("screen__option_icon_on");
     });
-
   }
+
+  mediaQueryHandle() {
+    if (window.matchMedia("(max-width: 550px)").matches) {
+      this.bg.style.background = this.data.bgAdap;
+      this.content.style.marginTop = this.data.marginAdap;
+    } else {
+      this.bg.style.background = this.data.bg;
+      this.content.style.marginTop = this.data.margin;
+
+    }
+  }
+
+
 
   // обработчик куда какую иконку добавить
   renderHandle() {
-    this.bg.style.background = this.data.bg;
-    this.content.style.marginTop = this.data.margin;
     this.screen.id = this.data.number;
+    this.content.style.marginTop = this.data.margin;
+    this.mediaQueryHandle();
+    // window.addEventListener('resize', this.mediaQueryHandle.bind(this));
+
   }
 
   render() {

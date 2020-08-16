@@ -8,3 +8,19 @@
   margin-top: -180px;
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 768px) {
+  .lead__main {
+    margin-top: -80px;
+    padding: 16px 18px 28px;
+    border: 12px solid #F5F4F4;
+
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .lead__main {
+    margin-top: -50px;
+  }
+}

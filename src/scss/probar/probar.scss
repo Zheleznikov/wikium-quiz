@@ -8,14 +8,38 @@
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(8px);
   border-radius: 12px;
-
   flex-direction: column;
   align-items: center;
   padding-top: 12px;
   box-sizing: border-box;
-  display: none;
+  display: flex;
+  z-index: 5;
 }
 
 .probar_on {
   display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .probar {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .probar {
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .probar {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .probar {
+    display: none;
+  }
 }

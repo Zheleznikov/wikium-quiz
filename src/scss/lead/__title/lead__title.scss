@@ -8,3 +8,15 @@
   color: #232323;
   margin-bottom: 28px;
 }
+
+@media screen and (max-width: 786px) {
+  .lead__title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lead__title {
+    max-width: 280px;
+  }
+}

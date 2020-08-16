@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   padding-top: 75px;
-  background: url(./images/header-1.jpg);
+  // background: url(./images/header-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   
@@ -16,5 +16,20 @@
 @media screen and (max-width: 1439px) {
   .header__content {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__content {
+    padding-top: 55px;
+    height: 264px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__content {
+    height: 135px;
+    padding-top: 30px;
+
   }
 }

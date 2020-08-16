@@ -2,7 +2,22 @@
 @import './__logo/header__logo.scss';
 .header {
   // background: linear-gradient(180deg, #CFEAE8 0%, #CCE8E6 12.5%, #C8E7E4 25.3%, #BFE3DF 51.33%, #BDE3DF 100%);
-  background: #C2E6E2;
+  background: url(./images/header-1.jpg) #CFEAE8 no-repeat center;
+  // background-position-x: center;
   // overflow: hidden;
-  
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background: url(./images/header-bg-768.jpg) #CFEAE8 no-repeat center;
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    background: url(./images/header-bg-375.jpg) #CFEAE8 no-repeat center;
+    background-size: cover;
+
+  }
 }

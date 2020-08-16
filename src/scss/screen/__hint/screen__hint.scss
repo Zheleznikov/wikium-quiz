@@ -59,3 +59,9 @@
   color: $correct-color;
 }
 
+
+@media screen and (max-width: 768px) {
+  .screen__hint_text {
+    font-size: 14px;
+  }
+}

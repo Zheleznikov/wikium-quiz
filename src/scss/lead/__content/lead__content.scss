@@ -6,6 +6,12 @@
 
 @media screen and (max-width: 1026px) {
   .lead__content {
-    width: 95%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .lead__content {
+    // max-width: 80%;
   }
 }

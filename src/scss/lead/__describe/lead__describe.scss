@@ -14,3 +14,9 @@
 .lead__describe_span {
   color: #AA12FB;
 }
+
+@media screen and (max-width: 1026px) {
+  .lead__describe {
+    width: 90%;
+  }
+}

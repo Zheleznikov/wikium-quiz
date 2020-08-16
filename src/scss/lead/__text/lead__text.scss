@@ -2,3 +2,9 @@
   @include text-describe;
   max-width: 808px;
 }
+
+@media screen and (max-width: 850px) {
+  .lead__content {
+    font-size: 14px;
+  }
+}
