@@ -4,12 +4,12 @@
 @import './__sign/footer__sign.scss';
 @import './__share/footer__share.scss';
 @import './__modal/footer__modal.scss';
+@import './__content/footer__content.scss';
 .footer {
-  display: flex;
-  justify-content: center;
   max-width: 1440px;
   margin: 100px auto 0;
-  // border: 1px solid red;
+  position: relative;
+  
 }
 
 .footer_all {
@@ -18,6 +18,13 @@
 
 @media screen and (max-width: 1440px) {
   .footer {
-    width: 95%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    margin-bottom: 40px;
+    margin-top: 50px;
   }
 }

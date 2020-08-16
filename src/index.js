@@ -33,6 +33,7 @@ function getFirstScreen() {
 }
 
 function resultHandle() {
+  showShare();
   const result = +sessionStorage.getItem("answer");
   switch (true) {
     case result > 17:
@@ -99,11 +100,11 @@ document.querySelectorAll('a').forEach(link => link.addEventListener('click', re
 
 // TESTING
 
-// resultBlock.classList.add("hurray_on");
+resultBlock.classList.add("hurray_on");
 // new Form(document.querySelector('.form'));
 
-// new Res(main, results[2]);
+//  new Res(main, results[2]);
 
-resultBlock.classList.add("hurray_on");
+// resultBlock.classList.add("hurray_on");
 // new Hurray();
 // new Quiz(main, quizData[9], screens[9], removeHash);
