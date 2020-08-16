@@ -6,6 +6,7 @@ export default [
     marginAdap768: '-200px',
     bg: 'url(./images/screen-1-bg.jpg) center',
     bgAdap: 'url(./images/screen-1-bg-550.jpg) #FEDDF0 center no-repeat',
+    bgAdap768: 'url(./images/screen-1-bg-768.jpg) #FEDDF0 center no-repeat',
     probarclass: '.number_1',
 
   },
@@ -17,6 +18,7 @@ export default [
     marginAdap: '-70px',
     marginAdap768: '-200px',
     bgAdap: 'url(./images/screen-2-bg-550.jpg)  center ',
+    bgAdap768: 'url(./images/screen-2-bg-768.jpg) center no-repeat',
 
     probarclass: '.number_2',
    
@@ -29,6 +31,8 @@ export default [
     marginAdap: '-70px',
     marginAdap768: '-240px',
     bgAdap: 'url(./images/screen-3-bg-550.jpg)  center ',
+    bgAdap768: 'url(./images/screen-3-bg-768.jpg) center no-repeat',
+
 
     probarclass: '.number_3',
    
@@ -36,8 +40,13 @@ export default [
 
   {
     number: 4,
-    bg: 'url(./images/screen-4-bg.jpg) #FFCA00 center',
+    bg: 'url(./images/screen-4-bg.jpg) #FFCA00 no-repeat center',
     margin: '-240px',
+    marginAdap: '-40px',
+    marginAdap768: '-40px',
+    bgAdap: 'url(./images/screen-4-bg-550.jpg)  center ',
+    bgAdap768: 'url(./images/screen-4-bg-768.jpg) center no-repeat',
+
 
     probarclass: '.number_4',
 
@@ -49,6 +58,10 @@ export default [
     bg: 'url(./images/screen-5-bg.jpg) #FFCA00 center',
     margin: '-260px',
     probarclass: '.number_5',
+    marginAdap: '-260px',
+    marginAdap768: '-60px',
+    bgAdap: 'url(./images/screen-5-bg-550.jpg)  center ',
+    bgAdap768: 'url(./images/screen-5-bg-768.jpg) center no-repeat',
   },
 
   {
