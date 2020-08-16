@@ -11,7 +11,7 @@ export default `
         жанре кубизма и она получилась просто идеальной, жена жаловалась, что страдала от морской болезни и лежала в кровати, а капитан уверял, что пытался вести корабль сквозь бурю. Так кто же убил мецената?
       </h2>
 
-      <div  class="screen__buttons">
+      <div  class="screen__buttons screen__buttons_9">
         <div class="screen__icon-container">
           <img src="./images/option-correct.png" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans9">

@@ -14,11 +14,27 @@
   flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 768px) {
+  .screen__buttons_9 {
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 
 @media screen and (max-width: 480px) {
   .screen__buttons_5, .screen__buttons_7 {
     max-width: 300px;
     margin: 0 auto; 
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .screen__buttons_9 {
+    justify-content: flex-start;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }

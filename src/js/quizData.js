@@ -105,6 +105,10 @@ export default [
     number: 9,
     bg: 'url(./images/screen-9-bg.jpg) #E8A83E center',
     margin: '-320px',
+    marginAdap: '-100px',
+    marginAdap768: '-200px',
+    bgAdap: 'url(./images/screen-9-bg-550.jpg)  center ',
+    bgAdap768: 'url(./images/screen-9-bg-768.jpg) center no-repeat',
 
     probarclass: '.number_9',
    

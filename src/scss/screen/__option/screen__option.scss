@@ -24,6 +24,8 @@
 
 }
 
+
+
 .screen__option:active {
   transform: scale(0.98);
 }
@@ -86,5 +88,15 @@
   .screen__option_icon_small {
     right: 28px;
     top: -8px;
+  }
+
+  .screen__option_custom {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .screen__option_custom {
+    width: unset;
   }
 }
