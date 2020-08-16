@@ -2,37 +2,26 @@ export default class Form {
   constructor(form) {
     this.form = form;
     this.button = this.form.querySelector('.form__button');
-    // this.name = this.form.querySelector('.name');
+    this.name = this.form.querySelector('.name');
     // this.surname = this.form.querySelector('.surname');
-    // this.email = this.form.querySelector('.email');
-    // this.phone = this.form.querySelector('.phone');
+    this.email = this.form.querySelector('.email');
+    this.phone = this.form.querySelector('.phone');
     this.handle();
   }
 
-  handle() {
-
-    this.form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      this.sendUserData()
-      .then(res => {
-        this.button.style.display = 'none';
-        
-
-        console.log(res);
-
-        // const event = new CustomEvent("renderScreen", {
-        //   detail: {
-        //     screenId: 'result',
-        //   },
-        // });
-        // document.dispatchEvent(event);
-        // window.location.hash = "#12";
-
-        
-      })
-
-    })
+  validation() {
+    if (this.name.value.length > 1 && this.email.value.length > 1 && this.phone.value.length > 1) {
+      this.button.removeAttribute('disabled');
+    } else {
+      this.button.setAttribute('disabled', 'disabled');
+    }
   }
+
+  handle() {
+    this.form.addEventListener('input', this.validation.bind(this));
+  }
+
+
 
   sendUserData() {
     return fetch('http://httpbin.org/post', {

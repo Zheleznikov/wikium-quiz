@@ -16,8 +16,9 @@ export default `
       </p>
 
 
+      <a href="#1">
       <button class="button res__button">Начать заново</button>
-
+      </a>
     </div>
 
 

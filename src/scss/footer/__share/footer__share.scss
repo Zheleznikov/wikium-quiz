@@ -2,6 +2,8 @@
   align-self: center;
   display: none;
   flex-direction: column;
+  z-index: 5;
+  background: inherit;
 }
 
 .footer__share_text {

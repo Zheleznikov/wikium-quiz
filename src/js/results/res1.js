@@ -15,7 +15,9 @@ export default `
         <img src="./images/res-mini.png" alt="">
       </p>
 
+      <a href="#1">
       <button class="button res__button">Начать заново</button>
+      </a>
   
     </div>
 

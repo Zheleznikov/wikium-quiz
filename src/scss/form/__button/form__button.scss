@@ -2,3 +2,7 @@
   display: block;
   margin: 32px auto 0;
 }
+
+.form__button:disabled {
+  opacity: .5;
+}

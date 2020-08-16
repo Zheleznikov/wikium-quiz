@@ -15,7 +15,7 @@ import showLoader from './js/loader';
 
 const main = document.querySelector(".main");
 const startTestButton = document.querySelector(".lead__button");
-const resultBlock = document.querySelector(".hurray");
+const hurray = document.querySelector(".hurray");
 const probar = document.querySelector(".probar");
 const seeResultButton = document.querySelector(".form__button");
 const page = document.querySelector(".page");
@@ -23,10 +23,13 @@ const wiki = document.querySelector(".wiki");
 const popupPres = document.querySelector('.popup_pres');
 const openPresPopupButton = document.querySelector('.footer__modal');
 const wikium = document.querySelector(".popup_wikium");
+const resContainer = document.querySelector('.res');
+const form = document.querySelector('.form');
 
 // sessionStorage.setItem("number", 0);
 
 new Popup(popupPres, openPresPopupButton);
+new Form(form);
 
 
 function getFirstScreen() {
@@ -41,13 +44,13 @@ function resultHandle() {
   const result = +sessionStorage.getItem("answer");
   switch (true) {
     case result > 17:
-      new Res(wiki, results[0]);
+      new Res(resContainer, results[0]);
       break;
     case result < 18 && result > 9:
-      new Res(wiki, results[1]);
+      new Res(resContainer, results[1]);
       break;
     case result < 10:
-      new Res(wiki, results[2]);
+      new Res(resContainer, results[2]);
       break;
   }
 }
@@ -55,7 +58,8 @@ function resultHandle() {
 function startQuizAgain() {
   sessionStorage.setItem("answer", 0);
   main.innerHTML = "";
-  wiki.innerHTML = "";
+  resContainer.innerHTML = "";
+  hurray.classList.remove("hurray_on");
   probar.innerHTML = probarElements;
   probar.classList.add("probar_on");
   new Quiz(main, quizData[0], screens[0], removeHash);
@@ -72,21 +76,13 @@ function whichScreenNextHandle(e) {
 
   switch (true) {
     case currentScreen < 10:
-      new Quiz(
-        main,
-        quizData[currentScreen],
-        screens[currentScreen],
-        removeHash
-      );
+      new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
       break;
     case currentScreen === 10:
-     resultBlock.classList.add("hurray_on");
-     new Popup (wikium, seeResultButton);
+     hurray.classList.add("hurray_on");
+     new Popup(wikium, seeResultButton);
      resultHandle();
       break;
-    // case currentScreen === 'result':
-    //   resultHandle();
-    //   showShare();
     case currentScreen === "again":
       startQuizAgain();
       break;
@@ -97,17 +93,18 @@ function whichScreenNextHandle(e) {
 
 document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
 seeResultButton.addEventListener("click", showLoader);
-// startTestButton.addEventListener("click", getFirstScreen);
+startTestButton.addEventListener("click", getFirstScreen);
 
 document.querySelectorAll('a').forEach(link => link.addEventListener('click', removeHash));
 
 // TESTING
 
 
-// resultBlock.classList.add("hurray_on");
+// hurray.classList.add("hurray_on");
 // new Popup (wikium, seeResultButton);
 // resultHandle();
 
-new Quiz(main, quizData[8], screens[8], removeHash);
+new Quiz(main, quizData[9], screens[9], removeHash);
+// new Res(resContainer, results[0]);
 
 
