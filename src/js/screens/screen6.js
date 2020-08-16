@@ -55,41 +55,7 @@ export default `
              </a>
           </div>
 
-          <div class="screen__hint screen__hint_6 hint-1">
-            <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
-            <p class="screen__hint_text"><span class="screen__hint_wrong">
-          Неверно. 
-            </span> 
-            Вы не угадали! Посмотрите на картинку еще раз. 
-          </p>
-          </div>
-
-          <div class="screen__hint  screen__hint_6 hint-2">
-            <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
-            <p class="screen__hint_text"><span class="screen__hint_wrong">
-              Неверно.
-            </span> 
-            Вы не угадали! Посмотрите на картинку еще раз. 
-          </p>
-          </div>
-    
-          <div class="screen__hint  screen__hint_6 hint-3">
-            <img src="./images/hint-correct.jpg" alt="" class="screen__icon">
-            <p class="screen__hint_text"><span class="screen__hint_correct">
-    Верно.
-            </span> 
-            Вас не обхитрить! Верно, 6 ягод. 
-          </p>
-          </div>
-
-          <div class="screen__hint screen__hint_6 hint-4">
-            <img src="./images/hint-wrong.jpg" alt="" class="screen__icon screen__icon_6">
-            <p class="screen__hint_text"><span class="screen__hint_wrong">
-              Неверно. 
-            </span> 
-            Вы не угадали! Посмотрите на картинку еще раз. 
-          </p>
-          </div>
+         
 
 
         </div>
@@ -98,6 +64,41 @@ export default `
         <img src="../images/screen-6-img.jpg" alt="" class="screen__img">
       </div>
       <!-- buttons over -->
+      <div class="screen__hint screen__hint_6 hint-1">
+      <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
+      <p class="screen__hint_text"><span class="screen__hint_wrong">
+    Неверно. 
+      </span> 
+      Вы не угадали! Посмотрите на картинку еще раз. 
+    </p>
+    </div>
+
+    <div class="screen__hint  screen__hint_6 hint-2">
+      <img src="./images/hint-wrong.jpg" alt="" class="screen__icon">
+      <p class="screen__hint_text"><span class="screen__hint_wrong">
+        Неверно.
+      </span> 
+      Вы не угадали! Посмотрите на картинку еще раз. 
+    </p>
+    </div>
+
+    <div class="screen__hint  screen__hint_6 hint-3">
+      <img src="./images/hint-correct.jpg" alt="" class="screen__icon">
+      <p class="screen__hint_text"><span class="screen__hint_correct">
+Верно.
+      </span> 
+      Вас не обхитрить! Верно, 6 ягод. 
+    </p>
+    </div>
+
+    <div class="screen__hint screen__hint_6 hint-4">
+      <img src="./images/hint-wrong.jpg" alt="" class="screen__icon screen__icon_6">
+      <p class="screen__hint_text"><span class="screen__hint_wrong">
+        Неверно. 
+      </span> 
+      Вы не угадали! Посмотрите на картинку еще раз. 
+    </p>
+    </div>
 
 
 

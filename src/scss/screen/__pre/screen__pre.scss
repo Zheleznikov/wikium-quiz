@@ -23,13 +23,29 @@
 
 @media screen and (max-width: 768px) {
   .screen__pre {
+    font-size: 14px;
+    text-align: center;
+
     margin: -310px auto 100px;
     width: 95%;
+  }
+
+  .screen__pre_7 {
+    margin: -300px auto 20px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .screen__pre {
+
     margin: -220px auto 100px;
+  }
+
+  .screen__pre_6 {
+    margin: -170px auto 90px;
+  }
+
+  .screen__pre_7 {
+    margin: -150px auto 20px;
   }
 }

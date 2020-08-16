@@ -81,6 +81,10 @@ export default [
     number: 7,
     bg: 'url(./images/screen-7-bg.jpg) #C3E2DF center',
     margin: '-320px',
+    marginAdap: '-280px',
+    marginAdap768: '-200px',
+    bgAdap: 'url(./images/screen-7-bg-550.jpg)  center ',
+    bgAdap768: 'url(./images/screen-7-bg-768.jpg) center no-repeat',
 
     probarclass: '.number_7',
    
@@ -89,6 +93,10 @@ export default [
     number: 8,
     bg: 'url(./images/screen-8-bg.jpg) #BEDCDA center',
     margin: '-260px',
+    marginAdap: '-100px',
+    marginAdap768: '-200px',
+    bgAdap: 'url(./images/screen-8-bg-550.jpg)  center ',
+    bgAdap768: 'url(./images/screen-8-bg-768.jpg) center no-repeat',
 
     probarclass: '.number_8',
    

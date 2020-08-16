@@ -6,6 +6,7 @@
 
 .screen__title_2 {
   max-width: 854px;
+
 }
 
 .screen__title_4 {
@@ -38,5 +39,12 @@
 @media screen and (max-width: 768px) {
   .screen__title {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .screen__title_7 {
+    text-align: center;
+    margin-bottom: 16px;
   }
 }

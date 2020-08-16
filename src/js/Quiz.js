@@ -151,18 +151,17 @@ export default class Quiz {
 
   mediaQueryHandle() {
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 768px)").matches && window.matchMedia("(min-width: 550px)").matches) {
 
       this.bg.style.background = this.data.bgAdap768;
       this.content.style.marginTop = this.data.marginAdap768;
       
     } else if (window.matchMedia("(max-width: 550px)").matches) {
 
-
       this.bg.style.background = this.data.bgAdap;
       this.content.style.marginTop = this.data.marginAdap;
 
-    } else {
+    } else if (window.matchMedia("(min-width: 769px)").matches) {
       this.bg.style.background = this.data.bg;
       this.content.style.marginTop = this.data.margin;
     }

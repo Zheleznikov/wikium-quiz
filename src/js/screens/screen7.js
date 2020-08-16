@@ -13,13 +13,16 @@ export default `
         3, 9 = 7 
         &nbsp;&nbsp;&nbsp
         8, 2 = 6
-        &nbsp;&nbsp;&nbsp
+
+      </h2>
+      <h2 class="screen__title screen__title_7">
         4, 5 =    <span class="screen__title_span_7">?</span>
       </h2>
+      
 
     
 
-      <div  class="screen__buttons">
+      <div  class="screen__buttons screen__buttons_7">
         <div class="screen__icon-container">
           <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans7">
