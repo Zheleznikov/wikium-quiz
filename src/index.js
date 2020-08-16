@@ -106,4 +106,4 @@ document.querySelectorAll('a').forEach(link => link.addEventListener('click', re
 
 // resultBlock.classList.add("hurray_on");
 // new Hurray();
-new Quiz(main, quizData[4], screens[4], removeHash);
+// new Quiz(main, quizData[6], screens[6], removeHash);

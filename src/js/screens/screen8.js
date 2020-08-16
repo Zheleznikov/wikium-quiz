@@ -14,7 +14,7 @@ export default `
       <div  class="screen__buttons screen__buttons_6">
         <div style="display: flex; flex-wrap:wrap;">
           <div class="screen__icon-container">
-            <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-1">
+            <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-1">
             <a href="#ans8">
 
               <button data-value="0" class="screen__option screen__option_short option-1">
@@ -24,7 +24,7 @@ export default `
           </div>
 
           <div class="screen__icon-container">
-            <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-2">
+            <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-2">
             <a href="#ans8">
 
               <button data-value="0" class="screen__option screen__option_short option-2">
@@ -33,7 +33,7 @@ export default `
             </a>
           </div>
           <div class="screen__icon-container">
-            <img src="./images/option-correct.jpg" class="screen__option_icon screen__option_icon_small icon-3">
+            <img src="./images/option-correct.png" class="screen__option_icon screen__option_icon_small icon-3">
             <a href="#ans8">
 
               <button data-value="2" class="screen__option screen__option_short option-3">
@@ -43,7 +43,7 @@ export default `
           </div>
 
           <div class="screen__icon-container">
-            <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-4 ">
+            <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-4 ">
             <a href="#ans8">
 
               <button data-value="0" class="screen__option screen__option_short option-4">

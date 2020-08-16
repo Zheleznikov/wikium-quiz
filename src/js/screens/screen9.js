@@ -13,7 +13,7 @@ export default `
 
       <div  class="screen__buttons">
         <div class="screen__icon-container">
-          <img src="./images/option-correct.jpg" class="screen__option_icon screen__option_icon_small icon-1">
+          <img src="./images/option-correct.png" class="screen__option_icon screen__option_icon_small icon-1">
           <a href="#ans9">
             <button data-value="2" class="screen__option screen__option_custom option-1">
               Художник
@@ -22,7 +22,7 @@ export default `
         </div>
 
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-2">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-2">
           <a href="#ans9">
             <button data-value="0" class="screen__option screen__option_custom option-2">
               Жена
@@ -30,7 +30,7 @@ export default `
           </a>
         </div>
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-3">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-3">
 
           <a href="#ans9">
             <button data-value="0" class="screen__option screen__option_custom option-3">
@@ -40,7 +40,7 @@ export default `
         </div>
 
         <div class="screen__icon-container">
-          <img src="./images/option-wrong.jpg" class="screen__option_icon screen__option_icon_small icon-4 ">
+          <img src="./images/option-wrong.png" class="screen__option_icon screen__option_icon_small icon-4 ">
           <a href="#ans9">
             <button data-value="0" class="screen__option screen__option_custom option-4">
               Все виноваты

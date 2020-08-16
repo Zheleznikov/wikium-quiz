@@ -68,6 +68,10 @@ export default [
     number: 6,
     bg: 'url(./images/screen-6-bg.jpg) #B6DAD6 center',
     margin: '0',
+    marginAdap: '0',
+    marginAdap768: '0',
+    bgAdap: 'url(./images/screen-6-bg-550.jpg)  center ',
+    bgAdap768: 'url(./images/screen-6-bg-768.jpg) center no-repeat',
 
     probarclass: '.number_6',
     
