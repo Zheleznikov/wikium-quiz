@@ -39,6 +39,10 @@
   .screen__pre_7 {
     margin: -300px auto 20px;
   }
+
+  .screen__pre_10 {
+    margin: -325px auto 150px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -57,6 +61,20 @@
 
   .screen__pre_10 {
     margin: -200px auto 100px;
+
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .screen__pre_10 {
+    margin: -220px auto 100px;
+
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .screen__pre_10 {
+    margin: -230px auto 100px;
 
   }
 }

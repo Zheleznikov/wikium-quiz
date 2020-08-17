@@ -1,6 +1,8 @@
 export default `
 <section class="screen">
-  <div class="screen__bg"></div>
+  <div class="screen__cover" style="background: #FEDDF0">
+      <div class="screen__bg"></div>
+    </div>
 
   <div class="screen__content">
 

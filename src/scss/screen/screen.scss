@@ -14,10 +14,12 @@
 @import './__icon-container/screen__icon-container.scss';
 @import './__link/screen__link.scss';
 @import './__img/screen__img.scss';
+@import './__cover/screen__cover.scss';
 .screen {
   // height: 500px;
   border-top: 1px solid $main-bg;
-  padding-top: 120px;
+  // border: 1px solid red;
+  padding-top: 100px;
   margin-bottom: 200px;
   min-height: calc(100vh - 300px);
   a {
@@ -28,7 +30,7 @@
 @media screen and (max-width: 768px) {
   .screen {
     margin-bottom: 120px;
-    padding-top: 120px;
+    // padding-top: 120px;
 
   }
 }

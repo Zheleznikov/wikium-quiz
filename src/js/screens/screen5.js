@@ -1,6 +1,11 @@
 export default `
 <section class="screen screen_5">
-  <div class="screen__bg"></div>
+
+  <div class="screen__cover screen__cover_5">
+    <div class="screen__bg"></div>
+  </div>
+
+
   <div class="screen__content">
     <p class="screen__pre">
       Насколько хорошо у вас развиты коммуникативные навыки мы проверили. А что насчет концентрации внимания?

@@ -1,7 +1,11 @@
 export default `
 
 <section class="screen">
-  <div class="screen__bg"></div>
+  <div class="screen__cover" style="background:#BEDCDA">
+    <div class="screen__bg"></div>
+  </div>
+
+
   <div class="screen__content">
     <div class="screen__main screen__main_8">
       <div class="screen__number">8</div>

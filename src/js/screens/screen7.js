@@ -1,6 +1,11 @@
 export default `
 <section class="screen">
-  <div class="screen__bg"></div>
+  <div class="screen__cover" style="background:#C3E2DF">
+    <div class="screen__bg"></div>
+  </div>
+
+
+
   <div class="screen__content">
     <p class="screen__pre screen__pre_7">
       Перейдем к заданиям на логику. 

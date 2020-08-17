@@ -6,11 +6,16 @@ export default class Form {
     // this.surname = this.form.querySelector('.surname');
     this.email = this.form.querySelector('.email');
     this.phone = this.form.querySelector('.phone');
+    this.emailReg = /^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$/;
+    this.phoneReg = /(\+7|8)((\s?\d{3}\s?)|(\s?\(\d{3}\)\s?))\d{3}(-?|\s?)\d{2}(-?|\s?)\d{2}/
+
     this.handle();
+
   }
 
   validation() {
-    if (this.name.value.length > 1 && this.email.value.length > 1 && this.phone.value.length > 1) {
+    if (this.emailReg.test(this.email.value)
+    && this.phoneReg.test(this.phone.value) && this.name.value.length > 1) {
       this.button.removeAttribute('disabled');
     } else {
       this.button.setAttribute('disabled', 'disabled');
