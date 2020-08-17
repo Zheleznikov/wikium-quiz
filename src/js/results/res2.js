@@ -1,6 +1,6 @@
 export default `
 
-<section id="12" class="res">
+<section id="11" class="res">
   <div class="res__content">
     <div class="res__describe">
       <img src="./images/res-middle.png" alt="" class="res__image">
@@ -16,8 +16,8 @@ export default `
           </a> Во время вебинара основатели Викиум, Сергей Белан и Артем Овечкин, поделятся советами о том, как сделать прорыв в карьере, ставить цели и быстро их достигать, перестать забывать детали и важные даты, наладить взаимоотношения с близкими.
       </p>
 
-      <a href="#1">
-      <button class="button res__button">Начать заново</button>
+      <a href="#12">
+      <button class="button res__button">Зарегистрироваться на вебинар</button>
       </a>
     </div>
 

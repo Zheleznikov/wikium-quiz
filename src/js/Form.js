@@ -3,7 +3,6 @@ export default class Form {
     this.form = form;
     this.button = this.form.querySelector('.form__button');
     this.name = this.form.querySelector('.name');
-    // this.surname = this.form.querySelector('.surname');
     this.email = this.form.querySelector('.email');
     this.phone = this.form.querySelector('.phone');
     this.emailReg = /^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$/;
@@ -24,6 +23,13 @@ export default class Form {
 
   handle() {
     this.form.addEventListener('input', this.validation.bind(this));
+    document.addEventListener('closeIframe', this.clearInputs.bind(this));
+  }
+
+  clearInputs() {
+    this.name.value = '';
+    this.email.value = '';
+    this.phone.value = '';
   }
 
 

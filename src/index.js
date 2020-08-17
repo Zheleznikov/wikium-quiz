@@ -16,7 +16,7 @@ const main = document.querySelector(".main");
 const startTestButton = document.querySelector(".lead__button");
 const hurray = document.querySelector(".hurray");
 const probar = document.querySelector(".probar");
-const seeResultButton = document.querySelector(".form__button");
+const formButton = document.querySelector(".form__button");
 const popupPres = document.querySelector('.popup_pres');
 const openPresPopupButton = document.querySelector('.footer__modal');
 const wikium = document.querySelector(".popup_wikium");
@@ -76,11 +76,13 @@ function whichScreenNextHandle(e) {
       new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
       break;
     case currentScreen === 10:
-     hurray.classList.add("hurray_on");
-     new Popup(wikium, seeResultButton, 'iframe');
+      resultHandle();
+     new Popup(wikium, formButton, 'iframe');
       break;
-    case currentScreen === "again":
-      startQuizAgain();
+    case currentScreen === "finalRes":
+      hurray.classList.add("hurray_on");
+
+
       break;
   }
 }
@@ -90,22 +92,30 @@ function showResults() {
   closeIframeButton.removeEventListener("click", showResults);
 }
 
+function makeEventClearInputs() {
+  const event = new CustomEvent("closeIframe");
+  document.dispatchEvent(event);
+}
+
 
 
 document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
-seeResultButton.addEventListener("click", showLoader);
+formButton.addEventListener("click", showLoader);
 startTestButton.addEventListener("click", getFirstScreen);
-closeIframeButton.addEventListener('click', showResults)
+closeIframeButton.addEventListener('click', () => {
+  showResults();
+  makeEventClearInputs();
+})
 allLinks.forEach(link => link.addEventListener('click', removeHash));
 
 // TESTING
 
 
 // hurray.classList.add("hurray_on");
-// new Popup (wikium, seeResultButton);
-// resultHandle();
+// new Popup (wikium, formButton);
+//  resultHandle();
 
-// new Quiz(main, quizData[9], screens[9], removeHash);
+new Quiz(main, quizData[9], screens[9], removeHash);
 // new Res(resContainer, results[0]);
 
 // new Res(resContainer, results[2]);

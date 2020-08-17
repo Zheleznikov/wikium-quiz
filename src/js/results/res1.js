@@ -1,6 +1,6 @@
 export default `
 
-<section id="12" class="res">
+<section id="11" class="res">
   <div class="res__content">
     <div class="res__describe">
       <img src="./images/res-senior.png" alt="" class="res__image">
@@ -15,11 +15,14 @@ export default `
         <img src="./images/res-mini.png" alt="">
       </p>
 
-      <a href="#1">
-      <button class="button res__button">Начать заново</button>
+      <a href="#12">
+      <button class="button res__button">Зарегистрироваться на вебинар</button>
       </a>
   
     </div>
+
+
+    
 
 
 

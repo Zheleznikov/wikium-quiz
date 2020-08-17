@@ -16,7 +16,7 @@ export default class Res {
       this.button.style.display = 'none';
       const event = new CustomEvent("renderScreen", {
         detail: {
-          screenId: 'again',
+          screenId: 'finalRes',
         },
       });
       document.dispatchEvent(event);

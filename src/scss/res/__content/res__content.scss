@@ -1,6 +1,11 @@
 .res__content {
   width: 1440px;
   margin: 0 auto;
+  height: calc(100vh - 300px);
+  padding-top: 50px;
+  // margin-bottom: 200px;
+  // border: 1px solid black;
+
 }
 
 @media screen and (max-width: 1439px) {
