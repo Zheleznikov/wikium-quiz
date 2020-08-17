@@ -5,3 +5,11 @@
   height: 60px;
 }
 
+
+@media screen and (max-width:330px) {
+  .res__button {
+    width: 90%;
+    height: auto;
+
+  }
+}

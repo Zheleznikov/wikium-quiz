@@ -8,3 +8,11 @@
 .form__button:disabled {
   opacity: .5;
 }
+
+@media screen and (max-width:380px) {
+  .form__button {
+    width: 90%;
+    height: auto;
+
+  }
+}

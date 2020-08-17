@@ -5,3 +5,11 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 385px) {
+  .form__container {
+    text-align: left;
+    width: 310px;
+    margin: 0 auto;
+  }
+}

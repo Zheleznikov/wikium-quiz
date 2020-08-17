@@ -1,4 +1,11 @@
 .form__checkbox {
   // margin-top: 3px;
   margin-right: 8px;
+  display: block;
+}
+
+@media screen and (max-width: 385px) {
+  .form__checkbox {
+    margin-left: 8px;
+  }
 }
