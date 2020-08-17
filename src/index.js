@@ -25,7 +25,7 @@ const openPresPopupButton = document.querySelector('.footer__modal');
 const wikium = document.querySelector(".popup_wikium");
 const resContainer = document.querySelector('.res');
 const form = document.querySelector('.form');
-
+const closeIframeButton = document.querySelector('.popup__close_wikium');
 // sessionStorage.setItem("number", 0);
 
 new Popup(popupPres, openPresPopupButton);
@@ -80,8 +80,8 @@ function whichScreenNextHandle(e) {
       break;
     case currentScreen === 10:
      hurray.classList.add("hurray_on");
-     new Popup(wikium, seeResultButton);
-     resultHandle();
+     new Popup(wikium, seeResultButton, 'iframe');
+    //  resultHandle();
       break;
     case currentScreen === "again":
       startQuizAgain();
@@ -89,12 +89,17 @@ function whichScreenNextHandle(e) {
   }
 }
 
+function showResults() {
+  resultHandle();
+  closeIframeButton.removeEventListener("click", showResults);
+}
+
 
 
 document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
 seeResultButton.addEventListener("click", showLoader);
 startTestButton.addEventListener("click", getFirstScreen);
-
+closeIframeButton.addEventListener('click', showResults)
 document.querySelectorAll('a').forEach(link => link.addEventListener('click', removeHash));
 
 // TESTING
@@ -104,7 +109,7 @@ document.querySelectorAll('a').forEach(link => link.addEventListener('click', re
 // new Popup (wikium, seeResultButton);
 // resultHandle();
 
-// new Quiz(main, quizData[9], screens[9], removeHash);
+new Quiz(main, quizData[1], screens[1], removeHash);
 // new Res(resContainer, results[0]);
 
 

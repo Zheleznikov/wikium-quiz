@@ -155,15 +155,22 @@ export default class Quiz {
 
       this.bg.style.background = this.data.bgAdap768;
       this.content.style.marginTop = this.data.marginAdap768;
+      this.bg.style.backgroundSize = 'cover';
+
       
     } else if (window.matchMedia("(max-width: 550px)").matches) {
 
       this.bg.style.background = this.data.bgAdap;
       this.content.style.marginTop = this.data.marginAdap;
+      this.bg.style.backgroundSize = 'cover';
+
 
     } else if (window.matchMedia("(min-width: 769px)").matches) {
       this.bg.style.background = this.data.bg;
       this.content.style.marginTop = this.data.margin;
+      this.bg.style.backgroundSize = 'cover';
+
+
     }
   }
 

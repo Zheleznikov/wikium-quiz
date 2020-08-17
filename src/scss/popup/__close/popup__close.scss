@@ -4,14 +4,36 @@
   right: 8px;
   cursor: pointer;
   z-index: 10;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFD7D7;
+  color: #EA5353;
+  border-radius: 50%;
+  font-family: Monserrat;
+  font-size: 14px;
+  transition: all .2s;
+}
+
+.popup__close:hover {
+  transform: scale(.95);
+}
+
+.popup__close:active {
+  transform: scale(.9);
+
 }
 
 .popup__close_wikium {
-  top: 20px;
+  top: 0;
+  right: 0;
   right: 20px;
   width: 40px;
   height: 40px;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
+  animation: pulsate-fwd 4s ease-in-out infinite both;
+  font-size: 22px;
 
 }
 

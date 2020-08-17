@@ -13,7 +13,7 @@ export default [
 
   {
     number: 2,
-    bg: 'url(./images/screen-2-bg-test.jpg) repeat',
+    bg: 'url(./images/screen-2-bg.jpg) no-repeat center',
     margin: '-240px',
     marginAdap: '-70px',
     marginAdap768: '-200px',

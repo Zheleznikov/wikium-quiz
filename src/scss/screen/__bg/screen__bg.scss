@@ -1,7 +1,14 @@
 .screen__bg {
   height: 286px;
   width: 100%;
-  // background-size: cover;
+  border: 1px solid red;
+  margin: 0 auto;
+  background:url(../../../images/screen-2-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  // background-repeat: no-repeat;
+  // background-position: center;
+
 
 }
 
