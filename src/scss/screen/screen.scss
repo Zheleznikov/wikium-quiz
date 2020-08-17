@@ -17,8 +17,9 @@
 .screen {
   // height: 500px;
   border-top: 1px solid $main-bg;
-  padding-top: 180px;
+  padding-top: 120px;
   margin-bottom: 200px;
+  min-height: calc(100vh - 300px);
   a {
     text-decoration: none;
   }

@@ -109,7 +109,7 @@ document.querySelectorAll('a').forEach(link => link.addEventListener('click', re
 // new Popup (wikium, seeResultButton);
 // resultHandle();
 
-new Quiz(main, quizData[1], screens[1], removeHash);
+// new Quiz(main, quizData[1], screens[1], removeHash);
 // new Res(resContainer, results[0]);
 
 
