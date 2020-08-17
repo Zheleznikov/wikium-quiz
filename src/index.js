@@ -105,11 +105,12 @@ document.querySelectorAll('a').forEach(link => link.addEventListener('click', re
 // TESTING
 
 
-hurray.classList.add("hurray_on");
-new Popup (wikium, seeResultButton);
-resultHandle();
+// hurray.classList.add("hurray_on");
+// new Popup (wikium, seeResultButton);
+// resultHandle();
 
 // new Quiz(main, quizData[9], screens[9], removeHash);
 // new Res(resContainer, results[0]);
 
+// new Res(resContainer, results[2]);
 

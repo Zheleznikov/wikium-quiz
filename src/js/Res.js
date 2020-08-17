@@ -4,8 +4,10 @@ export default class Res {
     this.html = html;
     this.render();
     this.button = this.res.querySelector('.res__button');
+    this.link = this.res.querySelector('.res__link');
+    this.renderLink();
     this.handleAgain();
-    
+
   }
 
   handleAgain() {
@@ -19,6 +21,10 @@ export default class Res {
       });
       document.dispatchEvent(event);
     });
+  }
+
+  renderLink() {
+    this.link.href = 'https://wikium.ru/tl/super-webinar?utm_source=hype&utm_medium=article&utm_campaign=special_project'
   }
 
 
