@@ -5,7 +5,6 @@ import probarElements from "./js/probar";
 
 import quizData from "./js/quizData";
 import Quiz from "./js/Quiz";
-import Hurray from "./js/Hurray";
 import Res from "./js/Res";
 import Form from "./js/Form";
 import Popup from "./js/Popup";
@@ -18,15 +17,13 @@ const startTestButton = document.querySelector(".lead__button");
 const hurray = document.querySelector(".hurray");
 const probar = document.querySelector(".probar");
 const seeResultButton = document.querySelector(".form__button");
-const page = document.querySelector(".page");
-const wiki = document.querySelector(".wiki");
 const popupPres = document.querySelector('.popup_pres');
 const openPresPopupButton = document.querySelector('.footer__modal');
 const wikium = document.querySelector(".popup_wikium");
 const resContainer = document.querySelector('.res');
 const form = document.querySelector('.form');
 const closeIframeButton = document.querySelector('.popup__close_wikium');
-// sessionStorage.setItem("number", 0);
+const allLinks = document.querySelectorAll('a');
 
 new Popup(popupPres, openPresPopupButton);
 new Form(form);
@@ -81,7 +78,6 @@ function whichScreenNextHandle(e) {
     case currentScreen === 10:
      hurray.classList.add("hurray_on");
      new Popup(wikium, seeResultButton, 'iframe');
-    //  resultHandle();
       break;
     case currentScreen === "again":
       startQuizAgain();
@@ -100,7 +96,7 @@ document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
 seeResultButton.addEventListener("click", showLoader);
 startTestButton.addEventListener("click", getFirstScreen);
 closeIframeButton.addEventListener('click', showResults)
-document.querySelectorAll('a').forEach(link => link.addEventListener('click', removeHash));
+allLinks.forEach(link => link.addEventListener('click', removeHash));
 
 // TESTING
 

@@ -4,7 +4,7 @@
   display: block;
   border-radius: 15px;
   width: 100%;
-  height: 71px;
+  min-height: 71px;
   background: white;
   font-family: Montserrat;
   font-style: normal;
@@ -14,6 +14,7 @@
   letter-spacing: 0.005em;
   text-align: left;
   padding-left: 28px;
+  // padding-right: 36px;
   margin-bottom: 16px;
   outline: none;
   cursor: pointer;
@@ -21,10 +22,7 @@
   position: relative;
   transition: all 0.5s;
   font-size: 18px;
-
 }
-
-
 
 .screen__option:active {
   transform: scale(0.98);
@@ -35,7 +33,6 @@
   right: 16px;
   top: calc(50% - 8px);
 
-  
   display: none;
 }
 
@@ -97,12 +94,18 @@
   }
 
   .screen__option_custom {
-    width: 130px;
+    width: 110px;
+  }
+
+  .screen__option_icon_last {
+    right: 28px;
+    top: -8px;
   }
 }
 
-@media screen and (max-width: 375px) {
-  .screen__option_custom {
-    width: unset;
+@media screen and (max-width: 395px) {
+  .screen__option {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
