@@ -5,31 +5,44 @@ export default class Form {
     this.name = this.form.querySelector('.name');
     this.email = this.form.querySelector('.email');
     this.phone = this.form.querySelector('.phone');
+    this.checkbox = this.form.querySelector('.form__checkbox');
     this.emailReg = /^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$/;
     this.phoneReg = /(\+7|8)((\s?\d{3}\s?)|(\s?\(\d{3}\)\s?))\d{3}(-?|\s?)\d{2}(-?|\s?)\d{2}/
 
     this.handle();
+    
 
   }
 
   validation() {
     if (this.emailReg.test(this.email.value)
-    && this.phoneReg.test(this.phone.value) && this.name.value.length > 1) {
+    && this.phoneReg.test(this.phone.value)
+    && this.name.value.length > 1
+    && this.checkbox.checked
+    ) {
       this.button.removeAttribute('disabled');
     } else {
-      this.button.setAttribute('disabled', 'disabled');
+      this.disableButton();
     }
+  }
+
+  disableButton() {
+    this.button.setAttribute('disabled', 'disabled');
+
   }
 
   handle() {
     this.form.addEventListener('input', this.validation.bind(this));
     document.addEventListener('closeIframe', this.clearInputs.bind(this));
+    document.addEventListener('closeIframe', this.disableButton.bind(this));
+
   }
 
   clearInputs() {
     this.name.value = '';
     this.email.value = '';
     this.phone.value = '';
+    this.checkbox.checked = false;
   }
 
 

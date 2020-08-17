@@ -1,6 +1,6 @@
 export default `
 
-<section class="screen ">
+<section class="screen screen_10">
   <div class="screen__cover" style="background:#9FDAE2">
     <div class="screen__bg"></div>
   </div>

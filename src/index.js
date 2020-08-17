@@ -76,11 +76,12 @@ function whichScreenNextHandle(e) {
       new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
       break;
     case currentScreen === 10:
-      resultHandle();
+     resultHandle();
      new Popup(wikium, formButton, 'iframe');
       break;
     case currentScreen === "finalRes":
       hurray.classList.add("hurray_on");
+      probar.classList.remove("probar_on");
 
 
       break;
@@ -103,7 +104,7 @@ document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
 formButton.addEventListener("click", showLoader);
 startTestButton.addEventListener("click", getFirstScreen);
 closeIframeButton.addEventListener('click', () => {
-  showResults();
+  // showResults();
   makeEventClearInputs();
 })
 allLinks.forEach(link => link.addEventListener('click', removeHash));
@@ -115,7 +116,7 @@ allLinks.forEach(link => link.addEventListener('click', removeHash));
 // new Popup (wikium, formButton);
 //  resultHandle();
 
-new Quiz(main, quizData[9], screens[9], removeHash);
+// new Quiz(main, quizData[9], screens[9], removeHash);
 // new Res(resContainer, results[0]);
 
 // new Res(resContainer, results[2]);
