@@ -2,7 +2,6 @@ import scroll from "./js/scroll";
 import IMask from 'imask';
 import screens from "./js/screensArr";
 import results from "./js/resArr";
-import probarElements from "./js/probar";
 
 import quizData from "./js/quizData";
 import Quiz from "./js/Quiz";
@@ -57,17 +56,7 @@ function resultHandle() {
   }
 }
 
-function startQuizAgain() {
-  sessionStorage.setItem("answer", 0);
-  main.innerHTML = "";
-  resContainer.innerHTML = "";
-  hurray.classList.remove("hurray_on");
-  probar.innerHTML = probarElements;
-  probar.classList.add("probar_on");
-  new Quiz(main, quizData[0], screens[0], removeHash);
-  hideShare();
-  startTestButton.removeEventListener("click", getFirstScreen);
-}
+
 
 function whichScreenNextHandle(e) {
   removeHash();
@@ -92,27 +81,8 @@ function whichScreenNextHandle(e) {
   }
 }
 
-function showResults() {
-  resultHandle();
-  closeIframeButton.removeEventListener("click", showResults);
-}
-
-function makeEventClearInputs() {
-  const event = new CustomEvent("closeIframe");
-  document.dispatchEvent(event);
-}
 
 
-
-document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
-startTestButton.addEventListener("click", getFirstScreen);
-closeIframeButton.addEventListener('click', clearForm)
-allLinks.forEach(link => link.addEventListener('click', removeHash));
-
-form.onsubmit = () => {
-    const wikiPopup = new Popup(wikium, formButton, 'iframe');
-    wikiPopup.open();
-}
 
 function clearForm() {
   name.value = '';
@@ -120,11 +90,22 @@ function clearForm() {
   phone.value = '';
 }
 
+
+document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
+startTestButton.addEventListener("click", getFirstScreen);
+closeIframeButton.addEventListener('click', clearForm)
+allLinks.forEach(link => link.addEventListener('click', removeHash));
+form.onsubmit = () => {
+    const wikiPopup = new Popup(wikium, formButton, 'iframe');
+    wikiPopup.open();
+}
+
+
+
 const phoneMask = IMask(phone, { mask: '+{7}(000)000-00-00'});
 
 // TESTING
 
-new Quiz(main, quizData[6], screens[6], removeHash);
 
 
 
