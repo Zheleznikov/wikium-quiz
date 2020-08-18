@@ -6,11 +6,9 @@ import results from "./js/resArr";
 import quizData from "./js/quizData";
 import Quiz from "./js/Quiz";
 import Res from "./js/Res";
-import Form from "./js/Form";
 import Popup from "./js/Popup";
 import removeHash from "./js/removeHash";
 import { showShare, hideShare } from "./js/footer";
-import showLoader from './js/loader';
 
 const main = document.querySelector(".main");
 const startTestButton = document.querySelector(".lead__button");
@@ -30,7 +28,6 @@ const closeIframeButton = document.querySelector('.popup__close_wikium');
 const allLinks = document.querySelectorAll('a');
 
 new Popup(popupPres, openPresPopupButton);
-new Form(form);
 
 
 function getFirstScreen() {
@@ -57,7 +54,6 @@ function resultHandle() {
 }
 
 
-
 function whichScreenNextHandle(e) {
   removeHash();
   const currentScreen = e.detail.screenId;
@@ -71,7 +67,6 @@ function whichScreenNextHandle(e) {
       break;
     case currentScreen === 10:
       resultHandle();
-      // new Popup(wikium, formButton, 'iframe');
       break;
     case currentScreen === "finalRes":
       hurray.classList.add("hurray_on");
@@ -80,8 +75,6 @@ function whichScreenNextHandle(e) {
       break;
   }
 }
-
-
 
 
 function clearForm() {
@@ -95,6 +88,8 @@ document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
 startTestButton.addEventListener("click", getFirstScreen);
 closeIframeButton.addEventListener('click', clearForm)
 allLinks.forEach(link => link.addEventListener('click', removeHash));
+
+
 form.onsubmit = () => {
     const wikiPopup = new Popup(wikium, formButton, 'iframe');
     wikiPopup.open();
@@ -102,10 +97,11 @@ form.onsubmit = () => {
 
 
 
+
+
 const phoneMask = IMask(phone, { mask: '+{7}(000)000-00-00'});
 
 // TESTING
-
 
 
 
