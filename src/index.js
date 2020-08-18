@@ -1,4 +1,5 @@
 import scroll from "./js/scroll";
+import IMask from 'imask';
 import screens from "./js/screensArr";
 import results from "./js/resArr";
 import probarElements from "./js/probar";
@@ -22,6 +23,10 @@ const openPresPopupButton = document.querySelector('.footer__modal');
 const wikium = document.querySelector(".popup_wikium");
 const resContainer = document.querySelector('.res');
 const form = document.querySelector('.form');
+const name = document.querySelector('.name');
+const email = document.querySelector('.email');
+const phone = document.querySelector('.phone');
+
 const closeIframeButton = document.querySelector('.popup__close_wikium');
 const allLinks = document.querySelectorAll('a');
 
@@ -76,13 +81,12 @@ function whichScreenNextHandle(e) {
       new Quiz(main, quizData[currentScreen], screens[currentScreen], removeHash);
       break;
     case currentScreen === 10:
-     resultHandle();
-     new Popup(wikium, formButton, 'iframe');
+      resultHandle();
+      // new Popup(wikium, formButton, 'iframe');
       break;
     case currentScreen === "finalRes":
       hurray.classList.add("hurray_on");
       probar.classList.remove("probar_on");
-
 
       break;
   }
@@ -101,23 +105,27 @@ function makeEventClearInputs() {
 
 
 document.addEventListener("renderScreen", (e) => whichScreenNextHandle(e));
-formButton.addEventListener("click", showLoader);
 startTestButton.addEventListener("click", getFirstScreen);
-closeIframeButton.addEventListener('click', () => {
-  // showResults();
-  makeEventClearInputs();
-})
+closeIframeButton.addEventListener('click', clearForm)
 allLinks.forEach(link => link.addEventListener('click', removeHash));
+
+form.onsubmit = () => {
+    const wikiPopup = new Popup(wikium, formButton, 'iframe');
+    wikiPopup.open();
+}
+
+function clearForm() {
+  name.value = '';
+  email.value = '';
+  phone.value = '';
+}
+
+const phoneMask = IMask(phone, { mask: '+{7}(000)000-00-00'});
 
 // TESTING
 
+new Quiz(main, quizData[6], screens[6], removeHash);
 
-// hurray.classList.add("hurray_on");
-// new Popup (wikium, formButton);
-//  resultHandle();
 
-// new Quiz(main, quizData[9], screens[9], removeHash);
-// new Res(resContainer, results[0]);
 
-// new Res(resContainer, results[2]);
 

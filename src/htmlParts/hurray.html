@@ -18,14 +18,14 @@
 
       <input type="hidden" name="formParams[setted_offer_id]">
 
-      <input class="form__input email" type="text" maxlength="60" placeholder="Введите ваш эл. адрес" name="formParams[email]" value="" required>
+      <input class="form__input email" type="email" maxlength="60" placeholder="Введите ваш эл. адрес" name="formParams[email]" value="" pattern = "^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required>
 
       <input class="form__input name" type="text" maxlength="60" placeholder="Введите ваше имя" name="formParams[full_name]" value="" required>
 
-      <input class="form__input phone" type="text" maxlength="60" placeholder="Введите ваш телефон" name="formParams[phone]" value="">
+      <input class="form__input phone" type="tel" maxlength="60" placeholder="Введите ваш телефон" name="formParams[phone]" value="" pattern="(\+7|8)((\s?\d{3}\s?)|(\s?\(\d{3}\)\s?))\d{3}(-?|\s?)\d{2}(-?|\s?)\d{2}" required>
 
      
-        <button class="button form__button" type="submit" id="button1770796" onclick="if(window['btnprs5f342a1fc69b7']){return false;}window['btnprs5f342a1fc69b7']=true;setTimeout(function(){window['btnprs5f342a1fc69b7']=false},6000);return true;" disabled>
+        <button class="button form__button" type="submit" id="button1770796" onclick="if(window['btnprs5f342a1fc69b7']){return false;}window['btnprs5f342a1fc69b7']=true;setTimeout(function(){window['btnprs5f342a1fc69b7']=false},6000);return true;">
 
           <!-- <a href="#12" style="text-decoration:none; color: inherit; border: 1px solid red; z-index: -1;"> -->
             Зарегистрироваться на бесплатный вебинар
@@ -39,7 +39,7 @@
       <input type="hidden" name="isHtmlWidget" value="1" />
 
       <div class="form__container">
-        <input type="checkbox" id="agree" class="form__checkbox" required>
+        <input type="checkbox" id="agree" class="form__checkbox" checked required>
         <label for="agree" class="form__label">С <a href="https://hype.tech/help/privacy" target="_blank">политикой конфиденциальности </a>ознакомлен</label>
       </div>
 

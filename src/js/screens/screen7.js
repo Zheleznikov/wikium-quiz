@@ -88,7 +88,7 @@ export default `
             </p> 
     
             <p style="margin-bottom: 8px;" class="screen__hint_text">
-              68 * 2 = 16
+              8 * 2 = 16
             </p> 
     
             <p style="margin-bottom: 8px;" class="screen__hint_text">
@@ -115,7 +115,7 @@ export default `
             </p> 
     
             <p style="margin-bottom: 8px;" class="screen__hint_text">
-              68 * 2 = 16
+              8 * 2 = 16
             </p> 
     
             <p style="margin-bottom: 8px;" class="screen__hint_text">
@@ -140,7 +140,7 @@ export default `
             </p> 
     
             <p style="margin-bottom: 8px;" class="screen__hint_text">
-              68 * 2 = 16
+              8 * 2 = 16
             </p> 
     
             <p style="margin-bottom: 8px;" class="screen__hint_text">
@@ -166,7 +166,7 @@ export default `
             </p> 
     
             <p style="margin-bottom: 8px;" class="screen__hint_text">
-              68 * 2 = 16
+              8 * 2 = 16
             </p> 
     
             <p style="margin-bottom: 8px;" class="screen__hint_text">

@@ -31,12 +31,13 @@ export default class Popup {
 
   handle() {
     this.closeButton.addEventListener('click', this.close.bind(this));
-    this.openButton.addEventListener("click", this.open.bind(this));
 
     switch(this.type) {
       case 'common' : 
       this.popup.addEventListener("click", this.superClose.bind(this));
       window.addEventListener("keydown", this.superClose.bind(this));
+      this.openButton.addEventListener("click", this.open.bind(this));
+
         break;
     }
   }
