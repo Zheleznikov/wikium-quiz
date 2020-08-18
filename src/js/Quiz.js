@@ -114,11 +114,10 @@ export default class Quiz {
     this.comment.classList.add("comment_on");
     this.options.forEach((option) => option.setAttribute("disabled", true));
     this.removeHash();
-    this.currentResultHandle();
   }
 
-  currentResultHandle() {
-    const value = +this.option1.getAttribute("data-value");
+  currentResultHandle(option) {
+    const value = +option.getAttribute("data-value");
     sessionStorage.setItem("answer", +sessionStorage.getItem("answer") + value);
   }
 
@@ -143,6 +142,7 @@ export default class Quiz {
   handle(option, hint, icon) {
     option.addEventListener("click", () => {
       this.commonHanlde();
+      this.currentResultHandle(option)
       this.probarHandleIsCorrect(option);
       hint.classList.add("screen__hint_on");
       icon.classList.add("screen__option_icon_on");
