@@ -36,17 +36,8 @@ export default class Form {
   }
 
   handle() {
-    this.form.addEventListener('submit', (e) => {
-      console.log(e);
-      console.log(e);
-      if (!this.validation()) {
-        console.log('не валидируется');
-        e.preventDefault();
-      } else {
-        console.log(' все  ok');
+    this.form.addEventListener('submit', this.senUserData.bind(this));
 
-      }
-    });
     // document.addEventListener('closeIframe', this.clearInputs.bind(this));
     //  document.addEventListener('closeIframe', this.disableButton.bind(this));
 
@@ -60,7 +51,9 @@ export default class Form {
 
 
 
-  sendUserData() {
+  sendUserData(e) {
+    e.preventDefault();
+
     return fetch('http://httpbin.org/post', {
         method: 'POST',
         // mode: 'no-cors', // no-cors, *cors, same-origin
